@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <!--this tells the web browser what type of HTML we are using, if we skipped doctype, the web browser would have to guess--> 
+<html lang="en">
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+<!---this is Lamar, i have made some changes to the wm to make it better and easier to read, since I know HTML from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message-->
 
-<!---this is Lamar, i have made some changes to the wm to make it better and eas—ier —to re—ad, since —I know HTML from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message-->
 
+<center><h1>Welcome to Dyers eve</h1></center>
 
-<h2><center>Welcome to Dyers eve</h2></center>
-
- <a href='http://allbackgrounds.com'>
- <img src='http://static.allbackgrounds.com/static/button.jpg' style='position:absolute;right:4;top:30;font-family:verdana;font-size:8pt' alt='twitter backgrounds'></a>
- <a href='http://allbackgrounds.com/metallica'></a>
- <a href="https://blingee.com/blingee/view/130060529-Metallica" target="_blank" title="Metallica"><img alt="Metallica" border="0" height="300" src="https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif" title="Metallica" width="550" /></a><br />
- <a href="https://blingee.com/pictures/metallica" target="_blank" title="metallica pictures"><p style="font-size:1em; color:red;">metallica pictures</p></a><br /><br />
+<a href='http://allbackgrounds.com'><img src='http://static.allbackgrounds.com/static/button.jpg'  style='position:absolute;right:4;top:30;font-family:verdana;font-size:8pt' alt='twitter backgrounds' ></a>
+<a href='http://allbackgrounds.com/metallica'></a>
+<a href="https://blingee.com/blingee/view/130060529-Metallica" target="_blank" title="Metallica"><img alt="Metallica" border="0" height="300" src="https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif" title="Metallica" width="550" /></a><br />
+<a href="https://blingee.com/pictures/metallica" target="_blank" title="metallica pictures"><p style="font-size:1em; color:red;">metallica pictures</p></a><br /><br />
  <p>
  Skeet skeet
  </p>
@@ -44,6 +47,3 @@
         </p>
 
        if you didnt read the rules say, Slayer
-
-
-
