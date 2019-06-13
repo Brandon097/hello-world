@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<!--this tells the web browser what type of HTML we are using, if we skipped doctype, the web browser would have to guess--> 
+<!--this tells the web browser what version/type of HTML we are using, if we skipped doctype, the web browser would have to guess--> 
 <html lang="en">
 <html>
 <head>
 <title>Title of the document</title>
+<style>
+h2 {text-align:center;}
+</style>
 </head>
-<!---this is Lamar, i have made some changes to the wm to make it better and easier to read, since I know HTML from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message-->
+<!--this is Lamar, i have made some changes to the wm to make it better and easier to read, since I know HTML from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message-->
 
-
-<center><h1>Welcome to Dyers eve</h1></center>
+<h2>Welcome to Dyers eve</h2>
 
 <a href='http://allbackgrounds.com'><img src='http://static.allbackgrounds.com/static/button.jpg'  style='position:absolute;right:4;top:30;font-family:verdana;font-size:8pt' alt='twitter backgrounds' ></a>
 <a href='http://allbackgrounds.com/metallica'></a>
