@@ -1,40 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--this tells the web browser what type of HTML we are using, if we skipped doctype, the web browser would have to guess--> 
 
-<!---this is Lamar, i might be making some changes to the wm to make it better and eas—ier —to re—ad, since —I know HTML from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message-->
+<!---this is Lamar, i have made some changes to the wm to make it better and eas—ier —to re—ad, since —I know HTML from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message-->
 
 
-<head> <!--The head element represents a collection of metadata for the Document.-->
-	<meta charset="UTF-8"> <!--The meta element represents various kinds of metadata that cannot be expressed using the title, base, link, style, and script elements.-->
-	<title>welcome to Dyers eve</title>
-</head>
+<h2><center>Welcome to Dyers eve</h2></center>
 
  <a href='http://allbackgrounds.com'>
  <img src='http://static.allbackgrounds.com/static/button.jpg' style='position:absolute;right:4;top:30;font-family:verdana;font-size:8pt' alt='twitter backgrounds'></a>
  <a href='http://allbackgrounds.com/metallica'></a>
  <a href="https://blingee.com/blingee/view/130060529-Metallica" target="_blank" title="Metallica"><img alt="Metallica" border="0" height="300" src="https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif" title="Metallica" width="550" /></a><br />
- <a href="https://blingee.com/pictures/metallica" target="_blank" title="metallica pictures"><p style="font-size:3em; color:red;">metallica pictures</p></a><br /><br />
+ <a href="https://blingee.com/pictures/metallica" target="_blank" title="metallica pictures"><p style="font-size:1em; color:red;">metallica pictures</p></a><br /><br />
  <p>
  Skeet skeet
  </p>
  <hr> <!--hr makes a black line-->
- <h1> <!--The h1 element represents a section heading.-->
+ <h3> <!--The h1 element represents a section heading.-->
  RULES
- </h1>
+ </h3>
     <ol> <!--ol= stands for order list and li= stands for list item-->
-    <li> Listen to admins and mods </li>
-    <li>Don't be an arse </li>
-    <li>No littering </li>
+    <li>Listen to admins and mods</li>
+    <li>Don't be an arse</li>
+    <li>No littering</li>
     <li>No dirt homes... like really..</li>
-    <li>Don't kill for no reason </li>
+    <li>Don't kill for no reason</li>
     <li>No dating, like dude they make dating sites you know... </li>
-    <li>If you build some thing and dont come back in a long time, it will be destroyed </li>
-    <li> Just be a nice person </li>
-    <li>Dont be a smart arse </li>
-    <li>Dont pick fights with people </li>
-    <li>Dont advertise </li>
-    <li> Dont ask for admin or mod, youll get banned</li>
-    <li>No friggen drama. </li>
+    <li>If you build some thing and dont come back in a long time, it will be destroyed</li>
+    <li> Just be a nice person</li>
+    <li>Dont be a smart arse</li>
+    <li>Dont pick fights with people</li>
+    <li>Dont advertise</li>
+    <li>Dont ask for admin or mod, youll get banned</li>
+    <li>No friggen drama.</li>
       </ol>
       <hr>
       <p>
@@ -50,5 +47,3 @@
 
 
 
-
-       
