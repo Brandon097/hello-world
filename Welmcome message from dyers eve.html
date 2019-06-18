@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<!--this tells the web browser what version/type of HTML we are using, if we skipped doctype, the web browser would have to guess-->
+<!--this tells the web browser what version/type of HTML we are using(html5 the latest verison, if we skipped doctype, the web browser would have to guess which will be bad-->
 
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-  <meta name="generator" content=
+  <meta charset="utf-8" meta="" name="generator" content=
   "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
 
   <title>Title of the document</title>
   <style type="text/css">
 h2 {text-align:center;}
+  h3 {
+        color:white;
+        background-color:gray;
+  }
+  span.blue {color:blue;}
+  span.green {color:green}
+
   </style>
   <script type="text/javascript">
 var playing = false;
   window.addEventListener('touchstart', function(){
     if (!playing) {
-        var mya = new Audio('../tikopia.mp4');
-        mya.loop = true;
-        mya.play();
+        var mya = new Audio('../fanfare.wav');
+        mya.loop = false;
+        mya.play()
         playing = true;
-    }
+    } 
   });
   </script>
 </head>
-<!--this is Lamar, i have made some changes and fixed like 20 errors in the wm to make it better and easier to read, since I know HTML, CCS, JavaScriptfrom a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message-->
+<!--this is Lamar, i have made some changes and fixed like 20 errors in the wm to make it better and easier to read, since I know HTML, CCS, JavaScript from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message-->
 
 <body>
   <h2>Welcome to Dyers eve</h2><a href='http://allbackgrounds.com'><img src=
@@ -31,12 +37,13 @@ var playing = false;
   'position:absolute;right:4;top:30;font-family:verdana;font-size:8pt' alt=
   'twitter backgrounds'></a> <a href='http://allbackgrounds.com/metallica'></a> <a href=
   "https://blingee.com/blingee/view/130060529-Metallica" target="_blank" title=
-  "Metallica"><img alt="Metallica" border="0" height="300" src=
+  "Metallica"><img alt="Metallica" border="1" height="300" src=
   "https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif"
   title="Metallica" width="500"></a><br>
   <a href="https://blingee.com/pictures/metallica" target="_blank" title=
-  "metallica pictures"><p style="font-size:2em; color:blue;">metallica pictures</p></a><br>
-  <br>
+  "metallica pictures"></a>
+
+  <p style="font-size:2em; color:blue;">metallica pictures</p><br>
 
   <p>Skeet skeet</p>
   <hr>
@@ -49,7 +56,8 @@ var playing = false;
     <!--ol= stands for order list and li= stands for list item-->
 
     <li>
-      <p>Listen to admins and mods</p>
+      <p>Listen to <span class="blue">admins</span> and <span class=
+      "green">mods</span></p>
     </li>
 
     <li>
@@ -94,7 +102,8 @@ var playing = false;
     </li>
 
     <li>
-      <p>Dont ask for admin or mod, youll get banned</p>
+      <p>Dont ask for <span class="blue">admin</span> or <span class="green">mod</span>,
+      youll get banned</p>
     </li>
 
     <li>
@@ -104,10 +113,11 @@ var playing = false;
   <hr>
 
   <p>If you read rules say WTF, if you just read the WTF and not the rules then hope for
-  the best</p><a href="https://wallpapersafari.com/metallica-backgrounds/"><img src=
-  "https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" alt="Metallica Backgrounds" width=
-  "500" height="300"></a><br>
-  <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
+  the best</p>
+
+  <p><a href="https://wallpapersafari.com/metallica-backgrounds/"><img src=
+  "https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" alt="Metallica Backgrounds"></a><br>
+  <a href="https://wallpapersafari.com/">wallpapersafari.com</a></p>
 
   <p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass
   then I guess your not free. -Reigin</p>
