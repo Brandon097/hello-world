@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <!--this tells the web browser what version/type of HTML we are using(html5 the latest verison, if we skipped doctype, the web browser would have to guess which will be bad-->
 
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="utf-8" meta="" name="generator" content=
-  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+  <meta charset="UTF-8">
+ <meta name="generator" content="HTML,CSS,XML,JavaScript">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Title of the document</title>
   <style type="text/css">
-h2 {text-align:center;}
+h2 {
+    Text-align: center;
+   font-size: 30pt;
+   text-shadow: 5px 2px 4px grey;
+    -webkit-animation: color-change 1s infinite;
+    -moz-animation: color-change 1s infinite;
+    -o-animation: color-change 1s infinite;
+    -ms-animation: color-change 1s infinite;
+    animation: color-change 1s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+}
   h3 {
         color:white;
         background-color:gray;
   }
   span.blue {color:blue;}
   span.green {color:green}
-
+  img { border: 0; }
   </style>
   <script type="text/javascript">
 var playing = false;
   window.addEventListener('touchstart', function(){
     if (!playing) {
-        var mya = new Audio('../fanfare.wav');
+        var mya = new Audio('../bird3.wav');
         mya.loop = false;
         mya.play()
         playing = true;
@@ -37,9 +74,9 @@ var playing = false;
   'position:absolute;right:4;top:30;font-family:verdana;font-size:8pt' alt=
   'twitter backgrounds'></a> <a href='http://allbackgrounds.com/metallica'></a> <a href=
   "https://blingee.com/blingee/view/130060529-Metallica" target="_blank" title=
-  "Metallica"><img alt="Metallica" border="1" height="300" src=
+  "Metallica"><img alt="Metallica" height="300" src=
   "https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif"
-  title="Metallica" width="500"></a><br>
+  title="Metallica" width="400"></a><br>
   <a href="https://blingee.com/pictures/metallica" target="_blank" title=
   "metallica pictures"></a>
 
@@ -116,7 +153,7 @@ var playing = false;
   the best</p>
 
   <p><a href="https://wallpapersafari.com/metallica-backgrounds/"><img src=
-  "https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" alt="Metallica Backgrounds"></a><br>
+  "https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" alt="Metallica Backgrounds" width="400" height="300"></a><br>
   <a href="https://wallpapersafari.com/">wallpapersafari.com</a></p>
 
   <p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass
