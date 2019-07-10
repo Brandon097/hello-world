@@ -5,21 +5,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="generator" content="HTML,CSS,javaScript">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="initial-scale = 1.0">
 
     <title>Title of the document</title>
     <style>
-    h2 {
-     Text-align: center;
-     font-size: 23pt;
+     h2 {
+     font-size: 19pt;
      text-shadow: 5px 2px 4px grey;
-      -webkit-animation: color-change 3s infinite;
-      -moz-animation: color-change 3s infinite;
-      -o-animation: color-change 3s infinite;
-      -ms-animation: color-change 3s infinite;
-      animation: color-change 3s infinite;
+      -webkit-animation: color-change 2s infinite;
+      -moz-animation: color-change 2s infinite;
+      -o-animation: color-change 2s infinite;
+      -ms-animation: color-change 2s infinite;
+      animation: color-change 2s infinite;
     }
-
     @-webkit-keyframes color-change {
       0% { color: red; }
       50% { color: blue; }
@@ -53,86 +51,34 @@
     span.green {color:green}
     img { border: 0; }
     </style>
-    <script>
-
-      function GetCookie (name) {
-      var arg = name + "=";
-      var alen = arg.length;
-      var clen = document.cookie.length;
-      var i = 0;
-      while (i < clen) {
-      var j = i + alen;
-      if (document.cookie.substring(i, j) == arg)
-      return getCookieVal (j);
-      i = document.cookie.indexOf(" ", i) + 1;
-      if (i == 0) break;
-      }
-      return null;
-    }
-      function SetCookie (name, value) {
-      var argv = SetCookie.arguments;
-      var argc = SetCookie.arguments.length;
-      var expires = (argc > 2) ? argv[2] : null;
-      var path = (argc > 3) ? argv[3] : null;
-      var domain = (argc > 4) ? argv[4] : null;
-      var secure = (argc > 5) ? argv[5] : false;
-      document.cookie = name + "=" + escape (value) +
-      ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
-      ((path == null) ? "" : ("; path=" + path)) +
-      ((domain == null) ? "" : ("; domain=" + domain)) +
-      ((secure == true) ? "; secure" : "");
-    }
-      function DeleteCookie (name) {
-      var exp = new Date();
-      exp.setTime (exp.getTime() - 1);
-      var cval = GetCookie (name);
-      document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
-    }
-      var expDays = 30;
-      var exp = new Date();
-      exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
-      function amt(){
-      var count = GetCookie('count')
-      if(count == null) {
-      SetCookie('count','1')
-      return 1
-    }
-      else {
-      var newcount = parseInt(count) + 1;
-      DeleteCookie('count')
-      SetCookie('count',newcount,exp)
-      return count
-    }
-    }
-      function getCookieVal(offset) {
-      var endstr = document.cookie.indexOf (";", offset);
-      if (endstr == -1)
-      endstr = document.cookie.length;
-      return unescape(document.cookie.substring(offset, endstr));
-      }
-      // End
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/Brandon097/hello-world/You%20been%20summoned.js"></script>
   </head>
 
-  <!-- this is Lamar, i have fixed everything 20 to 0 errors make it better and easier to read, since I know HTML, CCS, javaScript from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as it wont be shown on the welcome message -->
+  <!-- this is Lamar, i have fixed everything 20 to 0 errors make it better and easier to read, since I know HTML, CCS, javaScript from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as line comments won’t be shown on the welcome message -->
+
+
   <body>
+
     <audio autoplay>
-      <source src="https://docs.google.com/uc?export=download&id=1bsMJw85hd9eGd5GRR7raCuXsQzAWGryC">
+      <!-- this area is were the music will play, docs.google.com leads to my google drive, and download&Id is were the file will be downloaded and played -->
+      <source src="https://docs.google.com/uc?export=download&id=1MpBG23VaD8Leb6gTacueMdQq2Rgqg-U2">
     </audio>
+
     <marquee behavior="slide" direction="left">
-      <h2>Welcome to Dyers Eve</h2>
+      <h2>W͙E͙L͙C͙O͙M͙E͙ T͙O͙ D͙Y͙E͙R͙S͙ E͙V͙E͙</h2>
     </marquee>
     <script>
       // Begin
-      document.write("You've been summoned <strong>" + amt() + "</strong> times.")
+      document.write("You've done <strong>" + amt() + "</strong> laps, a another world record as usual😒")
       // End
     </script>
+
     <a href="http://allbackgrounds.com">
       <img src=
         "http://static.allbackgrounds.com/static/button.jpg" style=
         "position:absolute;right:4px;top:30px;font-family:verdana;font-size:8pt" alt=
         "twitter backgrounds"></a>
-    <a href="https://blingee.com/blingee/view/130060529-Metallica" target="_blank" title="Metallica">
+     <a href="https://blingee.com/blingee/view/130060529-Metallica" target="_blank" title="Metallica">
       <img alt="Metallica" height="300" src=
         "https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif"
         title="Metallica" width="400"></a>
@@ -140,7 +86,10 @@
     <a href="https://blingee.com/pictures/metallica" target="_blank" title=
       "metallica pictures"></a>
 
-    <p style="font-size:2em; color:blue;">metallica pictures</p>
+    <br>
+    <a href="https://blingee.com/pictures/metallica" target="_blank" title=
+      "metallica pictures"></a>
+
     <br>
     <p>Skeet skeet</p>
     <hr>
@@ -225,10 +174,38 @@
     <marquee behavior="scroll" direction="up">
       <img src="https://png2.kisspng.com/dy/75b239bf94968a4448929010a05880ee/L0KzQYi4UcI4N5QAeZGAYUHmc4HpWcI2OmFnUJCCMke3SYSBVcE2OWI9S6UCOEW0RYO4TwBvbz==/5a1cc0b92520b8.7274938515118337851521.png" width="90" height="90" alt="animation of balloons going up the Wm" />
     </marquee>
-    <audio id="bflat" src="https://docs.google.com/uc?export=download&id=1vy33kQCWKBCjVBMpWaBknsWEmYJv3RsI"></audio>
-    <button onclick="document.getElementById('bflat').play()">Play</button>
+    <audio id="resonance" src="https://docs.google.com/uc?export=download&id=1vy33kQCWKBCjVBMpWaBknsWEmYJv3RsI"></audio>
+    <button onclick="document.getElementById('resonance').play()">Play resonance</button>
   </body>
 </html>
+
+
+<!-- Also the wm is stored online on my GitHub respoitory, if someone deleted wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji
+https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html
+From llama -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
