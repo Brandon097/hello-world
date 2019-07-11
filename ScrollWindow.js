@@ -1,3 +1,4 @@
+    //begin
 var currentpos=0,alt=1,curpos1=0,curpos2=-1
 function initialize(){
 startit()
@@ -31,3 +32,4 @@ function startit(){
 setInterval("scrollwindow()",10)
 }
 window.ontouchstart=initialize
+    //End
