@@ -9,86 +9,76 @@
 
     <title>Title of the document</title>
     <style>
+     body { 
+     background: url("https://d1lxhc4jvstzrp.cloudfront.net/themes/cleanPeppermintBlack_14170d94/images/chalkboard.jpg") top center;
+     background-attachment: fixed;
+     }
      h2 {
-     font-size: 19pt;
-     text-shadow: 5px 2px 4px grey;
-      -webkit-animation: color-change 2s infinite;
-      -moz-animation: color-change 2s infinite;
-      -o-animation: color-change 2s infinite;
-      -ms-animation: color-change 2s infinite;
-      animation: color-change 2s infinite;
+     font-size: 20pt;
+    text-shadow: 5px 2px 4px grey;
+     transform: rotate(6deg);
+     animation: shake 0.8s infinite;
+      }
+     #hurryUp { 
+      -webkit-animation: color-change 1s infinite;
     }
     @-webkit-keyframes color-change {
       0% { color: red; }
-      50% { color: blue; }
-      100% { color: red; }
-    }
-    @-moz-keyframes color-change {
-     0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
-    }
-    @-ms-keyframes color-change {
-      0% { color: red; }
-      50% { color: blue; }
-      100% { color: red; }
-    }
-    @-o-keyframes color-change {
-      0% { color: red; }
-      50% { color: blue; }
-      100% { color: red; }
-    }
-    @keyframes color-change {
-      0% { color: red; }
-      50% { color: blue; }
-      100% { color: red; }
+      50% { color blue; }
+      100% { color: black; }
     }
     h3 {
       color:white;
       background-color:gray;
     }
-    span.blue {color:blue;}
-    span.green {color:green}
-    img { border: 0; }
+    #blue {color:blue;}
+    #green {color:green;}
+    img { border: 0;}
     </style>
-    <script src="https://cdn.jsdelivr.net/gh/Brandon097/hello-world/You%20been%20summoned.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Brandon097/hello-world/You%20been%20summoned.min.js">
+</script>
+
   </head>
 
-  <!-- this is Lamar, i have fixed everything 20 to 0 errors make it better and easier to read, since I know HTML, CCS, javaScript from a coding app. also this code right here tells the browser to ignore it, so you can use this as a line comment, as line comments won’t be shown on the welcome message -->
-
+  <!-- Lamar here, i fixed everything from 20 to 0 errors make it better and easier to read, also this code right here tells the browser to ignore it, so you can use this as a line comment, as line comments won’t be shown on the welcome message -->
 
   <body>
 
+
     <audio autoplay>
       <!-- this area is were the music will play, docs.google.com leads to my google drive, and download&Id is were the file will be downloaded and played -->
-      <source src="https://docs.google.com/uc?export=download&id=1MpBG23VaD8Leb6gTacueMdQq2Rgqg-U2">
+      <source src="https://docs.google.com/uc?export=download&id=1BsSYyJSfXXwJ6hCWy36ywVtcFdbody0J">
     </audio>
 
-    <marquee behavior="slide" direction="left">
-      <h2>W͙E͙L͙C͙O͙M͙E͙ T͙O͙ D͙Y͙E͙R͙S͙ E͙V͙E͙</h2>
-    </marquee>
+    <p>I love you guys, I guess this is bye forever - love cat</p>
+    <h1>🕰 left:<span id="hurryUp"> 3 days<br>
+14 hours</span></h1>
+
+      <h2>welcome to dyers eve</h2>
     <script>
       // Begin
-      document.write("You've done <strong>" + amt() + "</strong> laps, a another world record as usual😒")
+      document.write("You've done <strong>" + amt() + "</strong> laps on a highway,<br> can i please go home now😒")
       // End
     </script>
-
     <a href="http://allbackgrounds.com">
       <img src=
         "http://static.allbackgrounds.com/static/button.jpg" style=
         "position:absolute;right:4px;top:30px;font-family:verdana;font-size:8pt" alt=
-        "twitter backgrounds"></a>
-     <a href="https://blingee.com/blingee/view/130060529-Metallica" target="_blank" title="Metallica">
+        "twitter backgrounds">
+    </a>
+    <a href="https://blingee.com/blingee/view/130060529-Metallica" target="_self" title="Metallica">
       <img alt="Metallica" height="300" src=
-        "https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif"
-        title="Metallica" width="400"></a>
+        "https://media.discordapp.net/attachments/551804818549899273/599714640376758282/image0.jpg"  title="Metallica" width="400">
+    </a>
     <br>
     <a href="https://blingee.com/pictures/metallica" target="_blank" title=
-      "metallica pictures"></a>
+      "metallica pictures">
+     </a>
 
     <br>
     <a href="https://blingee.com/pictures/metallica" target="_blank" title=
-      "metallica pictures"></a>
+      "metallica pictures">
+    </a>
 
     <br>
     <p>Skeet skeet</p>
@@ -102,7 +92,7 @@
       <!-- ol= stands for order list and li= stands for list item -->
 
       <li>
-        <p>Listen to <span class="blue">admins</span> and <span class=
+        <p>Listen to <span id="blue">admins</span> and <span id=
       "green">mods</span></p>
       </li>
 
@@ -159,11 +149,15 @@
     <hr>
     <p>If you read rules say WTF, if you just read the WTF and not the rules then hope for the best</p>
 
-    <p><a href="https://wallpapersafari.com/metallica-backgrounds/">
-         <img src=
-           "https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" alt="Metallica Backgrounds" width=
-           "400" height="300"></a><br>
-       <a href="https://wallpapersafari.com/">wallpapersafari.com</a></p>
+    <p>
+      <a href="https://wallpapersafari.com/metallica-backgrounds/">
+          <img src=
+             "https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" alt="Metallica Backgrounds" width=
+           "400" height="300">
+      </a>
+      <br>
+      <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
+    </p>
 
     <p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass
    then I guess your not free. -Reigin</p>
@@ -172,17 +166,36 @@
 
     <!-- this here is the ballon on the wm going up -->
     <marquee behavior="scroll" direction="up">
-      <img src="https://png2.kisspng.com/dy/75b239bf94968a4448929010a05880ee/L0KzQYi4UcI4N5QAeZGAYUHmc4HpWcI2OmFnUJCCMke3SYSBVcE2OWI9S6UCOEW0RYO4TwBvbz==/5a1cc0b92520b8.7274938515118337851521.png" width="90" height="90" alt="animation of balloons going up the Wm" />
+      <img src="https://png2.kisspng.com/dy/75b239bf94968a4448929010a05880ee/L0KzQYi4UcI4N5QAeZGAYUHmc4HpWcI2OmFnUJCCMke3SYSBVcE2OWI9S6UCOEW0RYO4TwBvbz==/5a1cc0b92520b8.7274938515118337851521.png" width="90" height="90" alt="animation of balloons going up the Wm">
     </marquee>
-    <audio id="resonance" src="https://docs.google.com/uc?export=download&id=1vy33kQCWKBCjVBMpWaBknsWEmYJv3RsI"></audio>
+    <audio id="resonance" src="https://docs.google.com/uc?export=download&id=1vy33kQCWKBCjVBMpWaBknsWEmYJv3RsI">
+    </audio>
     <button onclick="document.getElementById('resonance').play()">Play resonance</button>
+    <p>some calming music, maybe classic? I don’t know</p>
+    <br>
+    <audio id="Khalid" src="https://docs.google.com/uc?export=download&id=1IuHMU0PAQRdbdsPcvEsumKlufF9ENKJj"> 
+    </audio>
+    <button onclick="document.getElementById('Khalid').play()">Play Khalid</button>
+    <p>as requested by 
+      <span id="blue">joey</span>
+    </p>
+    <audio id="ali" src="https://docs.google.com/uc?export=download&id=1jTTz4iuUbzwCPHWS8fne75wz-80jqUd5"> 
+    </audio>
+    <button onclick="document.getElementById('ali').play()">Play Ali Gatie - It's You (Official Lyrics Video).mp3
+</button>
+    <p>as requested by either sky-net or 
+      <span id="blue">joey</span> I don’t remember .x.
+    </p>
+
+     <audio id="metallica" src="https://docs.google.com/uc?export=download&id=1QBS1AlIfGHY5so3-bIjjxdryMrMju_ZR"> 
+    </audio>
+    <button onclick="document.getElementById('metallica').play()">Play metallica</button>
   </body>
 </html>
 
 
-<!-- Also the wm is stored online on my GitHub respoitory, if someone deleted wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji
-https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html
-From llama -->
+<!-- Also the wm is stored online on my GitHub respoitory, if someone deleted wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
+
 
 
 
