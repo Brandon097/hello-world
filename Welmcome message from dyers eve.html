@@ -20,11 +20,10 @@
      animation: shake 0.8s infinite;
     }
      #hurryUp { 
-     animation: color-change 1s infinite;
+     animation: color-change 0.5s infinite;
     }
     @keyframes color-change {
       0% { color: red; }
-      50% { color: blue; }
       100% { color: black; }
     }
     h3 {
@@ -44,14 +43,11 @@
 
   <body>
 
-
-    <audio autoplay>
-      <!-- this area is were the music will play, docs.google.com leads to my google drive, and download&Id is were the file will be downloaded and played -->
-      <source src="https://docs.google.com/uc?export=download&id=1BsSYyJSfXXwJ6hCWy36ywVtcFdbody0J">
-    </audio>
-
     <p>I love you guys, I guess this is bye forever - love cat</p>
-    <h1>🕰 left:<span id="hurryUp"> 3 days<br>14 hours</span></h1>
+    <h1>🕰 left:<span id="hurryUp">2 days<br>16 hours</span></h1>
+     <audio id="weGotHostiles" src="https://docs.google.com/uc?export=download&id=1xCRmWdEDXCbI4k1amk9238TPbyWSD97Y">
+    </audio>
+    <button onclick="document.getElementById('weGotHostiles').play()">Play we got hostiles for this scene</button>
 
       <h2>welcome to dyers eve</h2>
     <script>
