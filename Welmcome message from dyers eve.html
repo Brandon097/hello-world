@@ -15,16 +15,16 @@
      }
      h2 {
      font-size: 20pt;
-    text-shadow: 5px 2px 4px grey;
+     text-shadow: 5px 2px 4px grey;
      transform: rotate(6deg);
      animation: shake 0.8s infinite;
-      }
-     #hurryUp { 
-      -webkit-animation: color-change 1s infinite;
     }
-    @-webkit-keyframes color-change {
+     #hurryUp { 
+     animation: color-change 1s infinite;
+    }
+    @keyframes color-change {
       0% { color: red; }
-      50% { color blue; }
+      50% { color: blue; }
       100% { color: black; }
     }
     h3 {
@@ -51,8 +51,7 @@
     </audio>
 
     <p>I love you guys, I guess this is bye forever - love cat</p>
-    <h1>🕰 left:<span id="hurryUp"> 3 days<br>
-14 hours</span></h1>
+    <h1>🕰 left:<span id="hurryUp"> 3 days<br>14 hours</span></h1>
 
       <h2>welcome to dyers eve</h2>
     <script>
@@ -66,9 +65,9 @@
         "position:absolute;right:4px;top:30px;font-family:verdana;font-size:8pt" alt=
         "twitter backgrounds">
     </a>
-    <a href="https://blingee.com/blingee/view/130060529-Metallica" target="_self" title="Metallica">
+    <a href="https://blingee.com/blingee/view/130060529-Metallica" target="_self">
       <img alt="Metallica" height="300" src=
-        "https://media.discordapp.net/attachments/551804818549899273/599714640376758282/image0.jpg"  title="Metallica" width="400">
+        "https://media.discordapp.net/attachments/551804818549899273/599714640376758282/image0.jpg" width="400">
     </a>
     <br>
     <a href="https://blingee.com/pictures/metallica" target="_blank" title=
@@ -181,8 +180,7 @@
     </p>
     <audio id="ali" src="https://docs.google.com/uc?export=download&id=1jTTz4iuUbzwCPHWS8fne75wz-80jqUd5"> 
     </audio>
-    <button onclick="document.getElementById('ali').play()">Play Ali Gatie - It's You (Official Lyrics Video).mp3
-</button>
+    <button onclick="document.getElementById('ali').play()">Play Ali Gatie - It's You (Official Lyrics Video).mp3</button>
     <p>as requested by either sky-net or 
       <span id="blue">joey</span> I don’t remember .x.
     </p>
