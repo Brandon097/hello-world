@@ -1,5 +1,3 @@
-/* eslint-disable id-length */
-/* eslint-disable linebreak-style */
 // Begin
 function GetCookie (name) {
   const arg = name + "=";
