@@ -62,5 +62,5 @@ endstr = document.cookie.length;
 
   return unescape(document.cookie.substring(offset, endstr));
 }
-document.write("You've done <strong>" + amt() + "</strong> laps on a highway,<br> can i please go home now😒");
+
 // End
