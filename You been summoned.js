@@ -7,16 +7,17 @@ function GetCookie (name) {
   while (i < clen) {
     const j = i + alen;
     if (document.cookie.substring(i, j) === arg) {
-return getCookieVal(j);
-}
-    i = document.cookie.indexOf(" ", i) + 1;
+     return getCookieVal(j);
+    }
+     i = document.cookie.indexOf(" ", i) + 1;
     if (i === 0) {
-break;
-}
+     break;
+    }
   }
 
   return null;
 }
+
 function SetCookie (name, value) {
   const argv = SetCookie.arguments;
   const argc = SetCookie.arguments.length;
@@ -30,12 +31,14 @@ function SetCookie (name, value) {
   (domain === null ? "" : "; domain=" + domain) +
   (secure === true ? "; secure" : "");
 }
+
 function DeleteCookie (name) {
   const exp = new Date();
   exp.setTime(exp.getTime() - 1);
   const cval = GetCookie(name);
   document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
 }
+
 const expDays = 30;
 const exp = new Date();
 exp.setTime(exp.getTime() + expDays * 24 * 60 * 60 * 1000);
@@ -54,13 +57,15 @@ function amt () {
 
   return count;
 }
+
 function getCookieVal (offset) {
   let endstr = document.cookie.indexOf(";", offset);
   if (endstr === -1) {
-endstr = document.cookie.length;
-}
+   endstr = document.cookie.length;
+  }
 
   return unescape(document.cookie.substring(offset, endstr));
 }
 
 // End
+
