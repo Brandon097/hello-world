@@ -1,45 +1,60 @@
 <!DOCTYPE html>
-<!-- this tells the web browser what version/type of HTML we are using(html5 the latest verison), if we skipped doctype, the web browser would have to guess which will be bad -->
+<!-- this tells the web browser what version/type of HTML we are using(html 5 the latest version), if we skipped doctype, the web browser would have to guess which will be bad -->
 
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
     <meta name="generator" content="HTML,CSS,javaScript">
-   <meta name="viewport" content="initial-scale = 1.0">
 
     <title>Title of the document</title>
     <style>
-     body { 
-     background: url("https://d1lxhc4jvstzrp.cloudfront.net/themes/cleanPeppermintBlack_14170d94/images/chalkboard.jpg") top center;
-     background-attachment: fixed;
+     body {
+      background: url("https://d1lxhc4jvstzrp.cloudfront.net/themes/cleanPeppermintBlack_14170d94/images/chalkboard.jpg") top center;
+      background-attachment: fixed;
      }
      h2 {
-     font-size: 20pt;
-     text-shadow: 5px 2px 4px grey;
-     transform: rotate(6deg);
-     animation: shake 0.8s infinite;
+      font-size: 20pt;
+      text-shadow: 5px 2px 4px grey;
+      transform: rotate(6deg);
+      animation: colorChange 5s infinite;
     }
-     #wereSaved { 
-     Animation: color-change 3s infinite;
+     @keyframes colorChange {
+      0% {
+        color: pink;
+      }
+      25% {
+        color: purple;
+      }
+      50% {
+        color: red;
+      }
+      75% {
+        color: blue;
+      }
+      100% {
+        color: black;
+      }
     }
-    @keyframes color-change {
-      0% { color: pink; }
-      25% { color: purple; }
-      50% { color: red; }
-      75% { color: blue; }
-      100% { color: black; }
-    }
-    h3 {
+     h3 {
       color:white;
       background-color:gray;
     }
-    #blue {color:blue;}
-    #green {color:green;}
-    img { border: 0;}
+     .blue {
+      color:blue;
+    }
+     .green {
+      color:green;
+    }
+     .yellow {
+      color: yellow;
+    }
+     img {
+      border: 0;
+    }
     </style>
 
     <script src="https://cdn.jsdelivr.net/gh/Brandon097/hello-world/You%20been%20summoned.js">
-</script>
+    </script>
   </head>
 
   <!-- Lamar here, i fixed everything from 20 to 0 errors make it better and easier to read, also this code right here tells the browser to ignore it, so you can use this as a line comment, as line comments won’t be shown on the welcome message -->
@@ -48,10 +63,10 @@
 
     <audio autoplay src="https://docs.google.com/uc?export=download&id=1F1BLGOanr1dk6dpo3DQeIHBjC_9I5Lmd">
     </audio>
-    <p>I love you guys, I guess this is bye forever - love cat</p> 
+    <p>I love you guys, I guess this is bye forever - love cat</p>
     <p>ARTHUR ADDED 90 DAYS NIGGAS.</p>
- 
-      <h2>ωєℓ¢σмє тσ ∂уєяѕ</h2>
+
+    <h2>ωєℓ¢σмє тσ ∂уєяѕ</h2>
 
     <script>
     // Begin
@@ -65,16 +80,13 @@
         "position:absolute;right:4px;top:30px;font-family:verdana;font-size:8pt" alt=
         "twitter backgrounds">
     </a>
-    <div class="tenor-gif-embed" data-postid="4908013" data-share-method="host" data-width="100%" data-aspect-ratio="2.4175824175824174"><a href="https://tenor.com/view/cabin-in-the-woods-gif-4908013">Cabin In The Woods GIF</a> from <a href="https://tenor.com/search/cabininthewoods-gifs">Cabininthewoods GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <div class="tenor-gif-embed" data-postid="4908013" data-share-method="host" data-width="100%" data-aspect-ratio="2.4175824175824174">
+      <a href="https://tenor.com/view/cabin-in-the-woods-gif-4908013">Cabin In The Woods GIF</a>
+      from
+      <a href="https://tenor.com/search/cabininthewoods-gifs">Cabininthewoods GIFs</a>
+    </div>
+    <script async src="https://tenor.com/embed.js"></script>
     <br>
-    <a href="https://blingee.com/pictures/metallica" target="_blank" title=
-      "metallica pictures">
-     </a>
-
-    <br>
-    <a href="https://blingee.com/pictures/metallica" target="_blank" title=
-      "metallica pictures">
-    </a>
 
     <br>
     <p>Skeet skeet</p>
@@ -88,8 +100,7 @@
       <!-- ol= stands for order list and li= stands for list item -->
 
       <li>
-        <p>Listen to <span id="blue">admins</span> and <span id=
-      "green">mods</span></p>
+        <p>Listen to <span id="blue">admins</span> and <span id="green">mods</span></p>
       </li>
 
       <li>
@@ -113,8 +124,7 @@
       </li>
 
       <li>
-        <p>If you build some thing and dont come back in a long time, it will be
-      destroyed</p>
+        <p>If you build some thing and dont come back in a long time, it will be destroyed</p>
       </li>
 
       <li>
@@ -134,8 +144,7 @@
       </li>
 
       <li>
-        <p>Dont ask for <span class="blue">admin</span> or <span class="green">mod</span>,
-      youll get banned</p>
+        <p>Dont ask for <span class="blue">admin</span> or <span class="green">mod</span>, youll get banned</p>
       </li>
 
       <li>
@@ -147,9 +156,8 @@
 
     <p>
       <a href="https://wallpapersafari.com/metallica-backgrounds/">
-          <img src=
-             "https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" alt="Metallica Backgrounds" width=
-           "400" height="300">
+        <img src=
+          "https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" width="400" height="300" alt="Metallica Backgrounds">
       </a>
       <br>
       <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
@@ -160,65 +168,95 @@
 
     <p>if you didnt read the rules say, Slayer</p>
 
-    <!-- this here is the ballon on the wm going up -->
+    <!-- this here is the ballon on the Wm going up -->
     <marquee behavior="scroll" direction="up">
       <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Transparent_Balloons_Multi_Color_Clipart.png?m=1507172103" width="90" height="90" alt="animation of balloons going up the Wm">
     </marquee>
+
     <audio id="resonance" src="https://docs.google.com/uc?export=download&id=1vy33kQCWKBCjVBMpWaBknsWEmYJv3RsI">
     </audio>
-    <button onclick="document.getElementById('resonance').play()">Play resonance</button>
+
+    <button onclick="document.getElementById('resonance').play()">Play resonance
+    </button>
+
     <p>some calming music, maybe classic? I don’t know</p>
     <br>
-    <audio id="Khalid" src="https://docs.google.com/uc?export=download&id=1IuHMU0PAQRdbdsPcvEsumKlufF9ENKJj"> 
+    <audio id="Khalid" src="https://docs.google.com/uc?export=download&id=1IuHMU0PAQRdbdsPcvEsumKlufF9ENKJj">
     </audio>
-    <button onclick="document.getElementById('Khalid').play()">Play Khalid</button>
-    <p>as requested by 
-      <span id="blue">joey</span>
-    </p>
-    <audio id="ali" src="https://docs.google.com/uc?export=download&id=1jTTz4iuUbzwCPHWS8fne75wz-80jqUd5"> 
-    </audio>
-    <button onclick="document.getElementById('ali').play()">Play Ali Gatie - It's You (Official Lyrics Video).mp3</button>
-    <p>as requested by either sky-net or 
-      <span id="blue">joey</span> I don’t remember .x.
+
+    <button onclick="document.getElementById('Khalid').play()">Play Khalid
+    </button>
+
+    <p>as requested by
+      <span class="blue">joey</span>
     </p>
 
-     <audio id="metallica" src="https://docs.google.com/uc?export=download&id=1QBS1AlIfGHY5so3-bIjjxdryMrMju_ZR"> 
+    <audio id="Ali" src="https://docs.google.com/uc?export=download&id=1jTTz4iuUbzwCPHWS8fne75wz-80jqUd5">
     </audio>
-    <button onclick="document.getElementById('metallica').play()">Play metallica</button>
-    <p>as requested by
-      <span id="yellow">novitsky</span
+
+    <button onclick="document.getElementById('Ali').play()">Play Ali Gatie - It's You (Official Lyrics Video).mp3
+    </button>
+
+    <p>as requested by either sky-net or
+      <span class="blue">joey</span> I don’t remember .x.
     </p>
+
+    <audio id="metallica" src="https://docs.google.com/uc?export=download&id=1QBS1AlIfGHY5so3-bIjjxdryMrMju_ZR">
+    </audio>
+
+    <button onclick="document.getElementById('Metallica').play()">Play Metallica
+    </button>
+
+    <p>as requested by
+      <span class="yellow">novitsky</span>
+    </p>
+
     <br>
     <audio id="weGotHostiles" src="https://docs.google.com/uc?export=download&id=1xCRmWdEDXCbI4k1amk9238TPbyWSD97Y">
     </audio>
+
     <button onclick="document.getElementById('weGotHostiles').play()">Play we got hostiles
     </button>
+
     <p>as used in the part of credit expiring, well whenever something bad is going to happen at least some songs like these kicks in, just please stop staring at me now
     </p>
+
     <br>
-     <audio id="oceanMen" src="https://docs.google.com/uc?export=download&id=1kgjEpW2-nKU5edsHTy5xeG77n5vZF0fR">
+    <audio id="oceanMen" src="https://docs.google.com/uc?export=download&id=1kgjEpW2-nKU5edsHTy5xeG77n5vZF0fR">
     </audio>
+
     <button onclick="document.getElementById('oceanMen').play()">Play ocean men
     </button>
+    <br>
+    <br>
     <audio id="babyGotBack" src="https://docs.google.com/uc?export=download&id=1D-2CNYVPAMS-QrKzglbCUqzjSQQ4X86I">
     </audio>
+
     <button onclick="document.getElementById('babyGotBack').play()">Play baby got back.mp3
     </button>
 
+    <p>as requested by Kaz</p>
+
     <audio id="Sriracha" src="https://docs.google.com/uc?export=download&id=1Df6j7EN2y1lVDdJnDprKXYWOlWIh5VcO">
     </audio>
+
     <button onclick="document.getElementById('Sriracha').play()">Play Sriracha.mp3
     </button>
-
+    <br>
     <audio id="NF" src="https://docs.google.com/uc?export=download&id=1o4RMSPoEELb3Uer-RjErvuErGNhOZG0x">
     </audio>
+
     <button onclick="document.getElementById('NF').play()">Play NF - Time (Lyrics).mp3
     </button>
+
+    <p>as requested by skynet300</p>
+
+
   </body>
 </html>
 
 
-<!-- Also the wm is stored online on my GitHub respoitory, if someone deleted wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
+<!-- Also the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
 
 
 
