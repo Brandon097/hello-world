@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!-- this tells the web browser what version/type of HTML we are using(html5 the latest verison), if we skipped doctype, the web browser would have to guess which will be bad -->
+<!-- this tells the web browser what version/type of HTML we are using(html5 the latest verison), if we skipped doctype, the web browser would have to guess -->
 
 <html lang="en-US">
-  <!-- sets the language of the html. Cool can we set it to Japanese?-chi- -->
+  <!-- sets the language of the html. Cool can we set it to Japanese?-chi-,
+    To do that you replace "en-US" with "ja" -lamar- -->
 
   <head>
     <!-- we’re style and well other stuff goes -->
@@ -22,10 +23,31 @@
       }
       h1, h2, h3 {
         text-align: centered;
+        color: white;
       }
       .red {
         color: red;
       }
+      summary {
+        animation: colorChange 5s
+      }
+      @keyframes colorChange {
+      0% {
+        color: pink;
+      }
+      25% {
+        color: purple;
+      }
+      50% {
+        color: red;
+      }
+      75% {
+        color: blue;
+      }
+      100% {
+        color: black;
+      }
+    }
     </style>
 
     <script>
@@ -42,6 +64,8 @@
    It’s a place were you store code -->
 
 
+   <details>
+    <summary>recent comments</summary>
     <p>
       hey lamar if you see this, I have a backup of your old welcome message.<br>
       Fiery wanted me to put this one back. -childish
@@ -58,8 +82,9 @@
 
     <p>
       lol why are we talking here? btw I have a discord link for any non staff who want to join,<br>
-      Its not the main one -childish the link is https://discord.gg/27jQ7k8
+      Its not the main one -childish the link is <a href="https://discord.gg/27jQ7k8">https://discord.gg/27jQ7k8</a>
     </p>
+</details>
 
     <center> 
 
@@ -68,10 +93,10 @@
     </p>
 
     
-      <p>Welcome to <h2>Infinity</h2></p>
-    
-
-    <!-- I will have to deal with the fronts later, there actually no longer supported in html-->
+    <h1>
+      Welcome to
+      <em>Infinity</em>
+     </h1>
 
 
     <h2>
@@ -92,15 +117,15 @@
         If you show:
         <ol>
           <li>
-            maturity
+            Maturity
           </li>
         
           <li>
-            respect for the rules
+            Respect for the rules
           </li>
 
           <li>
-            and show an interest for the server.
+            And show an interest for the server.
           </li>
         </ol>
         You will get admin faster by doing volunteer work. <br>
