@@ -71,7 +71,7 @@ exp.setTime(exp.getTime() + expDays * 24 * 60 * 60 * 1000);
  */
 
 function amt () {
-  const count = new GetCookie("count");
+  const count = GetCookie("count");
   if (count === null) {
       SetCookie("count", "1");
 
@@ -102,4 +102,3 @@ function getCookieVal (offset) {
 }
 
 // End
-
