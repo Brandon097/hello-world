@@ -1,17 +1,5 @@
-
-<html lang="en">
-    <head>
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
-        <title>[WORLD_NAME]</title>
-    </head>
-    <body>
-<p>
-<center>[TITLE]</center><br/>
-
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-
-  <script>
-  $('head').append(`  <meta charset="UTF-8">
+<script>
+      $('head').append(`  <meta charset="UTF-8">
   <meta name="generator" content="HTML,CSS,javaScript">
 
   <title>Title of the document</title>
@@ -106,273 +94,283 @@
 }
   </style>`);
 
-</script>
+    </script>
 
 
+    <!-- Simulate a smartphone / tablet look -->
+    <div class="mobile-container">
 
-<div class="mobile-container">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+          <a href="#Rules">Rules</a>
+          <a href="#Music">Music</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <div id="myLinks">
-    <a href="#Rules">Rules</a>
-    <a href="#Music">Music</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
 
 
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
 
 
+      <audio autoplay="" src="">
+      </audio>
 
-  <audio autoplay="" src="">
-  </audio>
+      <p>I love you guys, I guess this is bye forever - love cat</p>
 
-  <p>I love you guys, I guess this is bye forever - love cat</p>
 
+      <p>
+        <span class="green">ARTHUR</span> ADDED 90 DAYS NIGGAS.
+      </p>
 
-  <p>
-    <span class="green">ARTHUR</span> ADDED 90 DAYS NIGGAS.
-  </p>
+      <h1>ωєℓ¢σмє тσ ∂уєяѕ</h1>
 
-  <h1>ωєℓ¢σмє тσ ∂уєяѕ</h1>
+      <img src="https://cdn.discordapp.com/attachments/551804818549899273/607462286835318826/image0.gif" width="400"
+        height="300" alt="Metallica">
 
-  <img src="https://cdn.discordapp.com/attachments/551804818549899273/607462286835318826/image0.gif" width="400" height="300" alt="Metallica">
+      <br>
+      <p>Skeet skeet</p>
+      <hr>
+      <!--hr makes a black line-->
 
-  <br>
-  <p>Skeet skeet</p>
-  <hr>
-  <!--hr makes a black line-->
+      <h2 id="Rules">RULES</h2>
+      <!-- The h3 element represents a section heading, the smaller the number the bigger the text, from h1 to h6 -->
 
-  <h2 id="Rules">RULES</h2>
-  <!-- The h3 element represents a section heading, the smaller the number the bigger the text, from h1 to h6 -->
+      <ol>
+        <!-- ol= stands for order list and li= stands for list item -->
+        <h3>
 
-  <ol>
-    <!-- ol= stands for order list and li= stands for list item -->
-    <h3>
+          <li>
+            <p>Listen to <span class="blue">admins</span> and <span class="green">mods</span></p>
+          </li>
 
-      <li>
-        <p>Listen to <span class="blue">admins</span> and <span class="green">mods</span></p>
-      </li>
+          <li>
+            <p>Don't be an arse</p>
+          </li>
 
-      <li>
-        <p>Don't be an arse</p>
-      </li>
+          <li>
+            <p>No littering</p>
+          </li>
 
-      <li>
-        <p>No littering</p>
-      </li>
+          <li>
+            <p>No dirt homes... like really..</p>
+          </li>
 
-      <li>
-        <p>No dirt homes... like really..</p>
-      </li>
+          <li>
+            <p>Don't build on water, or you will be banned</p>
+          </li>
 
-      <li>
-        <p>Don't build on water, or you will be banned</p>
-      </li>
+          <li>
+            <p>No dating, like dude they make dating sites you know...</p>
+          </li>
 
-      <li>
-        <p>No dating, like dude they make dating sites you know...</p>
-      </li>
+          <li>
+            <p>If you build some thing and dont come back in a long time, it will be destroyed</p>
+          </li>
 
-      <li>
-        <p>If you build some thing and dont come back in a long time, it will be destroyed</p>
-      </li>
+          <li>
+            <p>Just be a nice person</p>
+          </li>
 
-      <li>
-        <p>Just be a nice person</p>
-      </li>
+          <li>
+            <p>Dont be a smart arse</p>
+          </li>
 
-      <li>
-        <p>Dont be a smart arse</p>
-      </li>
+          <li>
+            <p>Dont pick fights with people</p>
+          </li>
 
-      <li>
-        <p>Dont pick fights with people</p>
-      </li>
+          <li>
+            <p>Dont advertise</p>
+          </li>
+
+          <li>
+            <p>Dont ask for <span class="blue">admin</span> or <span class="green">mod</span>, youll get banned</p>
+          </li>
+
+          <li>
+            <p>No friggen drama.</p>
+          </li>
+        </h3>
+      </ol>
+      <hr>
+      <p>If you read rules say WTF, if you just read the WTF and not the rules then hope for the best</p>
+
+      <p>
+        <a href="https://wallpapersafari.com/metallica-backgrounds/">
+          <img src="https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" width="400" height="300"
+            alt="Metallica Backgrounds">
+        </a>
+        <br>
+        <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
+      </p>
+
+      <p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free.
+        -Reigin</p>
+
+      <p>if you didnt read the rules say, Slayer</p>
+
+      <!-- this here is the ballon on the Wm going up -->
+      <marquee behavior="scroll" direction="up">
+        <img
+          src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Transparent_Balloons_Multi_Color_Clipart.png"
+          width="90" height="90" alt="animation of balloons going up the Wm">
+      </marquee>
+
+      <h2 id="Music">Music</h2>
+
+      <audio id="resonance" preload="none"
+        src="https://dl.dropboxusercontent.com/s/j8but3d441clsbo/HOME_-_Resonance-8GW6sLrK40k.mp3">
+      </audio>
+
+      <button onclick="document.getElementById('resonance').play()">Play resonance
+      </button>
+
+      <p>some calming music, maybe classic? I don’t know</p>
+      <br>
+      <audio id="Khalid" preload="none"
+        src="https://dl.dropboxusercontent.com/s/zq693rv6vem18yv/Khalid%20-%20Talk%20Official%20Video.mp3">
+      </audio>
+
+      <button onclick="document.getElementById('Khalid').play()">Play Khalid
+      </button>
+      <p>as requested by
+        <span class="blue">joey</span>
+      </p>
+
+      <audio id="Ali" preload="none"
+        src="https://dl.dropboxusercontent.com/s/x5bgr8vfx9z8eoo/Ali%20Gatie%20-%20It%27s%20You%20%28Official%20Lyrics%20Video%29.mp3">
+      </audio>
+
+      <button onclick="document.getElementById('Ali').play()">Play Ali Gatie - It's You (Official Lyrics Video).mp3
+      </button>
+
+      <p>as requested by either sky-net or
+        <span class="blue">joey</span> I don’t remember .x.
+      </p>
+
+      <audio id="metallica" preload="none"
+        src="https://dl.dropboxusercontent.com/s/90dzxvqlstv4h79/Metallica%20-%20Dyers%20Eve.mp3">
+      </audio>
 
-      <li>
-        <p>Dont advertise</p>
-      </li>
-
-      <li>
-        <p>Dont ask for <span class="blue">admin</span> or <span class="green">mod</span>, youll get banned</p>
-      </li>
+      <button onclick="document.getElementById('Metallica').play()">Play Metallica
+      </button>
 
-      <li>
-        <p>No friggen drama.</p>
-      </li>
-    </h3>
-  </ol>
-  <hr>
-  <p>If you read rules say WTF, if you just read the WTF and not the rules then hope for the best</p>
+      <audio id="remorse" preload="none" src="https://dl.dropboxusercontent.com/s/r74dsqmik31qfk2/No%20Remorse.mp3">
+      </audio>
 
-  <p>
-    <a href="https://wallpapersafari.com/metallica-backgrounds/">
-      <img src="https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" width="400" height="300" alt="Metallica Backgrounds">
-    </a>
-    <br>
-    <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
-  </p>
+      <button onclick="getElementById('remorse').play()">play no remorse
+      </button>
 
-  <p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free.
-    -Reigin</p>
+      <p>as requested by
+        <span style="color: red;">novitsky</span>
+      </p>
 
-  <p>if you didnt read the rules say, Slayer</p>
+      <br>
+      <audio id="weGotHostiles" preload="none"
+        src="https://dl.dropboxusercontent.com/s/lpq4fkkes3w64q9/Black%20Mesa%20-%20Weve%20Got%20Hostiles%20%28remix%29.mp3">
+      </audio>
 
-  <!-- this here is the ballon on the Wm going up -->
-  <marquee behavior="scroll" direction="up">
-    <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Transparent_Balloons_Multi_Color_Clipart.png" width="90" height="90" alt="animation of balloons going up the Wm">
-  </marquee>
+      <button onclick="document.getElementById('weGotHostiles').play()">Play we got hostiles
+      </button>
 
-  <h2 id="Music">Music</h2>
+      <p>as used in the part of credit expiring, well whenever something bad is going to happen at least some songs like
+        these kicks in, just please stop staring at me now
+      </p>
 
-  <audio id="resonance" preload="none" src="https://dl.dropboxusercontent.com/s/j8but3d441clsbo/HOME_-_Resonance-8GW6sLrK40k.mp3">
-  </audio>
+      <br>
+      <audio id="oceanMen" preload="none"
+        src="https://dl.dropboxusercontent.com/s/h7wytqfwnolio9b/Ween_-_Ocean-Man.mp3">
+      </audio>
 
-  <button onclick="document.getElementById('resonance').play()">Play resonance
-  </button>
+      <button onclick="document.getElementById('oceanMen').play()">Play ocean-men(BASS BOOSTED)
+      </button>
+      <br>
+      <br>
+      <audio id="babyGotBack" preload="none"
+        src="https://dl.dropboxusercontent.com/s/3348aqoo90drsww/baby%20got%20back.mp3">
+      </audio>
 
-  <p>some calming music, maybe classic? I don’t know</p>
-  <br>
-  <audio id="Khalid" preload="none" src="https://dl.dropboxusercontent.com/s/zq693rv6vem18yv/Khalid%20-%20Talk%20Official%20Video.mp3">
-  </audio>
+      <button onclick="document.getElementById('babyGotBack').play()">Play baby got back.mp3
+      </button>
 
-  <button onclick="document.getElementById('Khalid').play()">Play Khalid
-  </button>
-  <p>as requested by
-    <span class="blue">joey</span>
-  </p>
+      <p>as requested by Kaz</p>
 
-  <audio id="Ali" preload="none" src="https://dl.dropboxusercontent.com/s/x5bgr8vfx9z8eoo/Ali%20Gatie%20-%20It%27s%20You%20%28Official%20Lyrics%20Video%29.mp3">
-  </audio>
+      <audio id="Sriracha" preload="none"
+        src="https://dl.dropboxusercontent.com/s/ny7tn3ld6vmsw7k/Tech%20N9ne%20-%20Sriracha%20%28Feat.%20Logic%20%26%20Joyner%20Lucas%29.mp3">
+      </audio>
 
-  <button onclick="document.getElementById('Ali').play()">Play Ali Gatie - It's You (Official Lyrics Video).mp3
-  </button>
+      <button onclick="document.getElementById('Sriracha').play()">Play Sriracha.mp3
+      </button>
+      <br>
+      <audio id="NF" preload="none"
+        src="https://dl.dropboxusercontent.com/s/nrb2ak26hagolvm/NF%20-%20Time%20%28Lyrics%29.mp3">
+      </audio>
 
-  <p>as requested by either sky-net or
-    <span class="blue">joey</span> I don’t remember .x.
-  </p>
+      <button onclick="document.getElementById('NF').play()">Play NF - Time (Lyrics).mp3
+      </button>
 
-  <audio id="metallica" preload="none" src="https://dl.dropboxusercontent.com/s/90dzxvqlstv4h79/Metallica%20-%20Dyers%20Eve.mp3">
-  </audio>
+      <audio id="depression" preload="none"
+        src="https://dl.dropboxusercontent.com/s/zuksol02y3a34it/Ollie%20-%20Fading%20Away%20%28Prod.%20Kevin%20Peterson%29.mp3">
+      </audio>
 
-  <button onclick="document.getElementById('Metallica').play()">Play Metallica
-  </button>
+      <button onclick="document.getElementById('depression').play()">play fading away.mp3
+      </button>
 
-  <audio id="remorse" preload="none" src="https://dl.dropboxusercontent.com/s/r74dsqmik31qfk2/No%20Remorse.mp3">
-  </audio>
+      <audio id="oli" preload="none"
+        src="https://dl.dropboxusercontent.com/s/fi0aqddwvas1rxw/Ollie%20-%20Lost%20%28Lyrics%29.mp3">
+      </audio>
 
-  <button onclick="getElementById('remorse').play()">play no remorse
-  </button>
+      <button onclick="getElementById('oli').play()">play Ollie’s Lost Lyrics
+      </button>
 
-  <p>as requested by
-    <span style="color: red;">novitsky</span>
-  </p>
+      <audio id="post" preload="none"
+        src="https://dl.dropboxusercontent.com/s/947pb7bh6xdj6gf/Post-Malone_-_Goodbyes-%28Lyrics%29_ft._Young-Thug.mp3">
+      </audio>
 
-  <br>
-  <audio id="weGotHostiles" preload="none" src="https://dl.dropboxusercontent.com/s/lpq4fkkes3w64q9/Black%20Mesa%20-%20Weve%20Got%20Hostiles%20%28remix%29.mp3">
-  </audio>
+      <button onclick="getElementById('post').play()">play post-Malone
+      </button>
 
-  <button onclick="document.getElementById('weGotHostiles').play()">Play we got hostiles
-  </button>
+      <audio id="t.I" preload="none"
+        src="https://dl.dropboxusercontent.com/s/ykeuvina0nkwmyh/T.I._-_Thats-All-She-Wrote_%28feat.%20Eminem%29_%28Explicit%29.mp3">
+      </audio>
 
-  <p>as used in the part of credit expiring, well whenever something bad is going to happen at least some songs like
-    these kicks in, just please stop staring at me now
-  </p>
+      <button onclick="getElementById('t.I').play()">play all-She-wrote_(explicit)
+      </button>
 
-  <br>
-  <audio id="oceanMen" preload="none" src="https://dl.dropboxusercontent.com/s/h7wytqfwnolio9b/Ween_-_Ocean-Man.mp3">
-  </audio>
+      <p>as requested by skynet3000•</p>
 
-  <button onclick="document.getElementById('oceanMen').play()">Play ocean-men(BASS BOOSTED)
-  </button>
-  <br>
-  <br>
-  <audio id="babyGotBack" preload="none" src="https://dl.dropboxusercontent.com/s/3348aqoo90drsww/baby%20got%20back.mp3">
-  </audio>
+      <audio id="pressStart" preload="none"
+        src="https://dl.dropboxusercontent.com/s/gpz9wz7xjiizuvu/MDK_-_Press-start.mp3">
+      </audio>
 
-  <button onclick="document.getElementById('babyGotBack').play()">Play baby got back.mp3
-  </button>
+      <button onclick="getElementById('pressStart').play()">MDK_-_Press-start.mp3
+      </button>
 
-  <p>as requested by Kaz</p>
+      <p>
+        as Requested by <span class="green">boygame</span>
+      </p>
 
-  <audio id="Sriracha" preload="none" src="https://dl.dropboxusercontent.com/s/ny7tn3ld6vmsw7k/Tech%20N9ne%20-%20Sriracha%20%28Feat.%20Logic%20%26%20Joyner%20Lucas%29.mp3">
-  </audio>
 
-  <button onclick="document.getElementById('Sriracha').play()">Play Sriracha.mp3
-  </button>
-  <br>
-  <audio id="NF" preload="none" src="https://dl.dropboxusercontent.com/s/nrb2ak26hagolvm/NF%20-%20Time%20%28Lyrics%29.mp3">
-  </audio>
 
-  <button onclick="document.getElementById('NF').play()">Play NF - Time (Lyrics).mp3
-  </button>
 
-  <audio id="depression" preload="none" src="https://dl.dropboxusercontent.com/s/zuksol02y3a34it/Ollie%20-%20Fading%20Away%20%28Prod.%20Kevin%20Peterson%29.mp3">
-  </audio>
 
-  <button onclick="document.getElementById('depression').play()">play fading away.mp3
-  </button>
 
-  <audio id="oli" preload="none" src="https://dl.dropboxusercontent.com/s/fi0aqddwvas1rxw/Ollie%20-%20Lost%20%28Lyrics%29.mp3">
-  </audio>
 
-  <button onclick="getElementById('oli').play()">play Ollie’s Lost Lyrics
-  </button>
 
-  <audio id="post" preload="none" src="https://dl.dropboxusercontent.com/s/947pb7bh6xdj6gf/Post-Malone_-_Goodbyes-%28Lyrics%29_ft._Young-Thug.mp3">
-  </audio>
-
-  <button onclick="getElementById('post').play()">play post-Malone
-  </button>
-
-  <audio id="t.I" preload="none" src="https://dl.dropboxusercontent.com/s/ykeuvina0nkwmyh/T.I._-_Thats-All-She-Wrote_%28feat.%20Eminem%29_%28Explicit%29.mp3">
-  </audio>
-
-  <button onclick="getElementById('t.I').play()">play all-She-wrote_(explicit)
-  </button>
-
-  <p>as requested by skynet3000•</p>
-
-  <audio id="pressStart" preload="none" src="https://dl.dropboxusercontent.com/s/gpz9wz7xjiizuvu/MDK_-_Press-start.mp3">
-  </audio>
-
-  <button onclick="getElementById('pressStart').play()">MDK_-_Press-start.mp3
-  </button>
-
-  <p>
-    as Requested by <span class="green">boygame</span>
-  </p>
-  <p class="green">all songs have been switched to dropbox now, there is no download limit, play a song at anytime</p>
-
-
-
-
-
-
-
-
-<!-- Also the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
-</div>
-<hr/>
-<center style ="font-size:80%">While playing on any server, please be courteous to other players, listen to mods and admins, and behave yourself. You may be muted or banned for any reason, and the in-game chat may be monitored.<br/>
-<a href="http://theblockheads.net" style="padding-right:5px; color:#FFF;">TheBlockheads.net</a> <a href="https://forums.theblockheads.net" style="padding-left:5px; color:#FFF;">Blockheads Forums</a><br/><hr/></center><br/>
-</p>
-
-</body>
-</html>
+      <!-- Also the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
+    </div>
