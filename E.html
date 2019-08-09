@@ -1,87 +1,95 @@
-    <!-- this first script loads jQuery, without it the second script won’t work, which would mean 1. The default background would be used, 2. The buttons would go back to normal, ETC -->
+<!-- this first script loads jQuery, without it the second script won’t work, which would mean 1. The default background would be used, 2. The buttons would go back to normal, ETC -->
 
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
 
-    <!-- this script(jQuery) will edit the <head> tag and put <styles> and stuff in it. (Note the head tag is in the server.html file) -->
+    <!-- this script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file) -->
 
-    <script>
-      $('head').append(`<meta charset="UTF-8">
-      <meta name="generator" content="HTML,CSS,javaScript,jQuery">
-      <style>
-        /* Blockheads font */
-        @font-face {
-         font-family: "blockheads_font";
-         src: url("http://theblockheads.net/fonts/BlockheadsFont-Regular.ttf");
-        }
-        body {
-         /* The background-image property sets one or several background images in an element. Let's set a background-image for the <body> element. */
+      <script>
+        $('head').append(`<style>
+      /* Blockheads font */
+      @font-face {
+        font-family: "blockheads_font";
+        src: url("../../04B_03__.TTF");
+      }
+      body {
+        /* The background-image property sets one or several background images in an element.
+        Let's set a background-image for the <body> element. */
 
-         background-image: url('../santa_hat.png');
+        background-image: url('https://d1lxhc4jvstzrp.cloudfront.net/themes/cleanPeppermintBlack_14170d94/images/chalkboard.jpg');
 
-         /* The background-attachment property sets whether a background image is fixed or scrolls with the rest of the page. */
+        /* The background-attachment property sets whether a background image is fixed or scroll with the rest of the page. */
 
-         background-attachment: scrolling;
-         background-repeat: repeat;
-         font-family: blockheads_font;
-         /* Change page background */
-         overflow: scroll;
-        }
-        #messageContent {
-         background: #CDCDCD; /* This is a color value */
-         color: black;
-         border: solid;
-         border-radius: 50px;
-         border-width: 2px;
-        }
-        /* Nicer show more info button */
-        button {
-         background: transparent;
-         border: 1px solid #000000;
-         border-radius: 5px;
-         padding: 5px;
-         width: 200px;
-        }
-        h1 {
-         font-size: 20pt;
-         text-shadow: 5px 2px 4px grey;
-         transform: rotate(6deg);
-         Animation: colorChange 1s infinite;
-        }
-        @keyframes colorChange {
-         0% {
+        background-attachment: scroll;
+
+        /* Specifies how background images are tiled after they have been sized and positioned */
+        background-repeat: repeat;
+        font-family: "blockheads_font";
+
+        /* Change page background */
+
+        overflow: scroll;
+      }
+      #messageContent {
+        /* This is a color value */
+        background: transparent;
+        color: white;
+        border: solid;
+        border-radius: 50px;
+        border-width: 2px;
+      }
+      /* Nicer show more info button */
+      button {
+        background: transparent;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        padding: 5px;
+        width: 200px;
+      }
+      h1 {
+        font-size: 20pt;
+        /* Enables shadow effects to be applied to the text of the element. */
+
+        text-shadow: 5px 2px 4px grey;
+        transform: rotate(6deg);
+        Animation: colorChange 1s infinite;
+      }
+      @keyframes colorChange {
+        0% {
           color: blue;
-         }
-         50% {
+        }
+        50% {
           color: red;
-         }
-         100% {
+        }
+        100% {
           color: blue;
-         }
         }
-        h2 {
-         color: white;
-         background-color: gray;
-        }
-        .blue {
-         color: blue;
-        }
-        .green {
-         color: green;
-        }
-        .yellow {
-         color: yellowgreen;
-        }
-        img {
-         border: 0;
-        }
-      </style>`);
+      }
+      h2 {
+        color: white;
+        background-color: gray;
+      }
+      .blue {
+        color: blue;
+      }
+      .green {
+        color: green;
+      }
+      .yellow {
+        color: yellowgreen;
+      }
+      img {
+        border: 0;
+      }
+    </style>`);
     </script>
 
 
+<!-- BEGIN -->
 
 
-    <audio autoplay src="https://dl.dropboxusercontent.com/s/1k3nxa96pizcg49/Video_Game_Themes_that_Sound_Familiar.mp3">
+
+    <audio autoplay src="../trainChug.wav">
     </audio>
 
     <p>I love you guys, I guess this is bye forever - love cat</p>
@@ -93,25 +101,26 @@
 
     <h1>w̫e̫l̫c̫o̫m̫e̫ t̫o̫ d̫y̫e̫r̫s̫</h1>
 
-    <!-- hitwebcounter Code START -->
-    <a href="http://www.hitwebcounter.com" target="_blank">
-      <img src="http://hitwebcounter.com/counter/counter.php?page=7123366&style=0001&nbdigits=4&type=ip&initCount=0"
-        title="." alt=".">
-    </a>
-    <br>
+
 
     <p>UniqueVisitors</p>
-    <!-- hitwebcounter.com -->
-    <a href="http://www.hitwebcounter.com" title="My Traffic Estimate" target="_blank" style="font-family: Geneva, Arial, Helvetica;
-    font-size: 11px;
-    color: #85948C;
-    text-decoration: underline;">
-      <em>My Traffic Estimate </em>
-    </a>
+
+    <!-- Start of CuterCounter Code -->
+<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=gemqnnnx&nd=5&style=71" alt="website counter"></a>
+<!-- End of CuterCounter Code -->
+
+<p>page visits</p>
+
+    <!-- Start of CuterCounter Code -->
+<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=gmqnnnd&nd=5&style=71" alt="website counter"></a>
+<!-- End of CuterCounter Code -->
 
 
-    <img src="https://cdn.discordapp.com/attachments/551804818549899273/608511179631099904/image.png" width="400"
-      height="300" alt="Metallica">
+
+
+
+    <img width="320" height="320" src="https://cdn.discordapp.com/attachments/551804818549899273/609013573758484500/image0.gif">
+
     <br>
     <p>Skeet skeet</p>
     <hr>
@@ -122,7 +131,7 @@
 
     <ol>
       <!-- ol= stands for order list and li= stands for list item -->
-      <h3>
+    
 
         <li>
           <p>Listen to <span class="blue">admins</span> and <span class="green">mods</span></p>
@@ -175,7 +184,7 @@
         <li>
           <p>No friggen drama.</p>
         </li>
-      </h3>
+      
     </ol>
     <hr>
     <p>If you read rules say WTF, if you just read the WTF and not the rules then hope for the best</p>
@@ -203,11 +212,11 @@
 
     <h2>Music</h2>
 
-    <audio id="resonance" preload="none"
+    <audio id="Resonance" preload="none"
       src="https://dl.dropboxusercontent.com/s/j8but3d441clsbo/HOME_-_Resonance-8GW6sLrK40k.mp3">
     </audio>
 
-    <button onclick="document.getElementById('resonance').play()">Play resonance
+    <button onclick="document.getElementById('Resonance').play()">Play resonance
     </button>
 
     <p>some calming music, maybe classic? I don’t know</p>
@@ -263,7 +272,8 @@
     </p>
 
     <br>
-    <audio id="oceanMen" preload="none" src="https://dl.dropboxusercontent.com/s/h7wytqfwnolio9b/Ween_-_Ocean-Man.mp3">
+    <audio id="oceanMen" preload="none"
+      src="https://dl.dropboxusercontent.com/s/h7wytqfwnolio9b/Ween_-_Ocean-Man.mp3">
     </audio>
 
     <button onclick="document.getElementById('oceanMen').play()">Play ocean-men(BASS BOOSTED)
@@ -307,18 +317,18 @@
     <button onclick="getElementById('oli').play()">play Ollie’s Lost Lyrics
     </button>
 
-    <audio id="post" preload="none"
+    <audio id="Post" preload="none"
       src="https://dl.dropboxusercontent.com/s/947pb7bh6xdj6gf/Post-Malone_-_Goodbyes-%28Lyrics%29_ft._Young-Thug.mp3">
     </audio>
 
-    <button onclick="getElementById('post').play()">play post-Malone
+    <button onclick="getElementById('Post').play()">play post-Malone
     </button>
 
-    <audio id="t.I" preload="none"
+    <audio id="T.I" preload="none"
       src="https://dl.dropboxusercontent.com/s/ykeuvina0nkwmyh/T.I._-_Thats-All-She-Wrote_%28feat.%20Eminem%29_%28Explicit%29.mp3">
     </audio>
 
-    <button onclick="getElementById('t.I').play()">play all-She-wrote_(explicit)
+    <button onclick="getElementById('T.I').play()">play all-She-wrote_(explicit)
     </button>
 
     <p>as requested by skynet3000•</p>
@@ -339,24 +349,6 @@
     <!-- Also the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <hr />
     <center style="font-size:80%">While playing on any server, please be courteous to other players, listen to mods and
       admins, and behave yourself. You may be muted or banned for any reason, and the in-game chat may be
@@ -367,6 +359,25 @@
     </center><br />
   </p>
 
-</body>
 
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
