@@ -1,110 +1,106 @@
-<!-- this first script loads jQuery, without it the second script won’t work, which would mean 1. The default background would be used, 2. The buttons would go back to normal, ETC -->
-
-    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
 
-    <!-- this script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file) -->
+<!-- this script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file) -->
 
-      <script>
-        $('head').append(`<style>
-      /* Blockheads font */
-      @font-face {
-        font-family: "blockheads_font";
-        src: url("../../BlockheadsFont-Regular.otf");
-      }
-      body {
-        /* The background-image property sets one or several background images in an element.
-        Let's set a background-image for the <body> element. */
+<script>
+  $('head').append(`<style>
+    /* Blockheads font */
+    @font-face {
+      font-family: "blockheads_font";
+      src: url("../../BlockheadsFont-Regular.otf");
+    }
+    body {
+      /* Sets the background image(s) of an element. */
 
-        background-image: url('https://d1lxhc4jvstzrp.cloudfront.net/themes/cleanPeppermintBlack_14170d94/images/chalkboard.jpg');
+      background-image: url('https://d1lxhc4jvstzrp.cloudfront.net/themes/cleanPeppermintBlack_14170d94/images/chalkboard.jpg');
 
-        /* The background-attachment property sets whether a background image is fixed or scroll with the rest of the page. */
+      /* Specifies whether the background images are fixed with regard to the viewport ('fixed') or scroll along with the element ('scroll') or its contents ('local'). */
 
-        background-attachment: scroll;
+      background-attachment: scroll;
 
-        /* Specifies how background images are tiled after they have been sized and positioned */
+      /* Specifies how background images are tiled after they have been sized and positioned */
 
-        background-repeat: repeat-y;
-        font-family: "blockheads_font";
-        overflow: auto;
-      }
+      background-repeat: repeat-y;
+      font-family: "blockheads_font";
+      overflow: auto;
+    }
 
-      #messageContent {
-        /* This is a color value */
-        background: transparent;
-        color: white;
-        border: solid;
-        border-radius: 50px;
-        border-width: 2px;
-      }
+    #messageContent {
+      /* This is a color value */
+      background: transparent;
+      color: white;
+      border: solid;
+      border-radius: 50px;
+      border-width: 2px;
+    }
 
 
-      /* Nicer show more info button */
-      button {
-        background: transparent;
-        border: 1px solid #fff;
-        border-radius: 5px;
-        padding: 5px;
-        width: auto;
-        color: orange;
-      }
-      h3 {
-        margin: 0;
-      }
+    /* Nicer show more info button */
+    button {
+      background: transparent;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      padding: 5px;
+      width: auto;
+      color: orange;
+    }
+    h3 {
+      margin: 0;
+    }
 
-      /* Define page sections */
-      section, .section {
-        padding: 4px;
-        background: rgba(255, 255, 255, 0.8);
-        margin-bottom: 8px;
-      }
+    /* Define page sections */
+    section, .section {
+      padding: 4px;
+      background: rgba(255, 255, 255, 0.8);
+      margin-bottom: 8px;
+    }
 
-      h1 {
-        font-size: 30px;
-        /* Enables shadow effects to be applied to the text of the element. */
+    h1 {
+      font-size: 30px;
+      /* Enables shadow effects to be applied to the text of the element. */
 
-        text-shadow: 5px 2px 4px grey;
-        transform: rotate(6deg);
-        Animation: colorChange 3s;
-      }
+      text-shadow: 5px 2px 4px grey;
+      transform: rotate(6deg);
+      Animation: colorChange 3s;
+    }
 
-      @keyframes colorChange {
-        0% {
-          color: blue;
-        }
-        50% {
-          color: red;
-        }
-        100% {
-          color: blue;
-        }
-      }
-      h2 {
-        color: white;
-        background-color: gray;
-      }
-      .blue {
+    @keyframes colorChange {
+      0% {
         color: blue;
       }
-      .green {
-        color: green;
+      50% {
+        color: red;
       }
-      .yellow {
-        color: yellowgreen;
+      100% {
+        color: blue;
       }
-      img {
-        border: 0;
-      }
-
-      ol {
-        background-image: url('https://cdn.discordapp.com/attachments/551804818549899273/607403913314041866/image0.gif');
-        background-attachment: fixed;
-        background-size: contain;
-      }
+    }
+    h2 {
+      color: white;
+      background-color: gray;
+    }
+    .blue {
+      color: blue;
+    }
+    .green {
+      color: green;
+    }
+    .yellow {
+      color: yellowgreen;
+    }
+    img {
+      border: 0;
+    }
+    ol {
+      background-image: url('https://cdn.discordapp.com/attachments/551804818549899273/607403913314041866/image0.gif');
+      background-attachment: fixed;
+      background-size: contain;
+    }
     </style>`);
 
 
-      addEventListener('load', function () {
+  addEventListener('load', function () {
     // Add .section to the center elements defined in the page already
     Array.from(document.querySelectorAll('center')).forEach(function (el) {
       el.classList.add('section');
@@ -116,62 +112,60 @@
   });
 
 
-$(document).ready(function(){
-   
-   $('ol').load("https://brandon097.github.io/hello-world/Dyers%20Eve%20Rules.html");
+  $(document).ready(function () {
 
-   $('#Music').load("https://brandon097.github.io/hello-world/Dyers%20Eve%20Music.html");
-});
+    $('ol').load("https://brandon097.github.io/hello-world/Dyers%20Eve%20Rules.html");
 
-    </script>
+    $('#Music').load("https://brandon097.github.io/hello-world/Dyers%20Eve%20Music.html");
+  });
+
+</script>
 
 
 <!-- BEGIN -->
 
 
 
-    <audio autoplay src="../bird10">
-    </audio>
+<audio autoplay src="../bird10">
+</audio>
 
-    <p>I love you guys, I guess this is bye forever - love cat</p>
-
-
-    <p>
-      <span class="green">ARTHUR</span> ADDED 90 DAYS NIGGAS.
-    </p>
-
-    <h1>w̫e̫l̫c̫o̫m̫e̫ t̫o̫ d̫y̫e̫r̫s̫</h1>
+<p>I love you guys, I guess this is bye forever - love cat</p>
 
 
+<p>
+  <span class="green">ARTHUR</span> ADDED 90 DAYS NIGGAS.
+</p>
 
-    <p>UniqueVisitors</p>
+<h1>w̫e̫l̫c̫o̫m̫e̫ t̫o̫ d̫y̫e̫r̫s̫</h1>
 
-    <!-- Start of CuterCounter Code -->
-    <a href="https://www.cutercounter.com/"
-    target="_blank">
-      <img src="https://www.cutercounter.com/hits.php?id=gemqnnnx&nd=5&style=71"
-      alt="website counter">
-    </a>
-    <!-- End of CuterCounter Code -->
+
+
+<p>UniqueVisitors</p>
+
+<!-- Start of CuterCounter Code -->
+<a href="https://www.cutercounter.com/" target="_blank">
+  <img src="e" alt="website counter">
+</a>
+<!-- End of CuterCounter Code -->
 
 <p>page visits</p>
 
-    <!-- Start of CuterCounter Code -->
-    <a href="https://www.cutercounter.com/" target="_blank">
-      <img src="https://www.cutercounter.com/hits.php?id=gmqnnnd&nd=5&style=71"
-      alt="website counter">
-    </a>
+<!-- Start of CuterCounter Code -->
+<a href="https://www.cutercounter.com/" target="_blank">
+  <img src="e" alt="website counter">
+</a>
 <!-- End of CuterCounter Code -->
 
-    <img width="auto" height="300" src="https://cdn.discordapp.com/attachments/551804818549899273/609664952747294720/image0.png">
+<img width="auto" height="300"
+  src="https://cdn.discordapp.com/attachments/551804818549899273/609664952747294720/image0.png">
 
-    <br>
-    <p>Skeet skeet</p>
-    <hr>
-    <!--hr makes a horizontal line-->
+<br>
+<p>Skeet skeet</p>
+<hr>
+<!-- hr represents a paragraph-level thematic break -->
 
-    <h2>RULES</h2>
-    <!-- The h3 element represents a section heading, the smaller the number the bigger the text, from h1 to h6 -->
+<h2>RULES</h2>
+<!-- The h3 element represents a section heading, the smaller the number the bigger the text, from h1 to h6 -->
 
 
 
@@ -188,53 +182,32 @@ $(document).ready(function(){
 
 
 
-    <hr>
-    <p>If you read rules say WTF, if you just read the WTF and not the rules then hope for the best</p>
+<hr>
+<p>If you read rules say WTF, if you just read the WTF and not the rules then hope for the best</p>
 
-    <p>
-      <a href="https://wallpapersafari.com/metallica-backgrounds/">
-        <img src="https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" width="auto" height="300"
-          alt="Metallica Backgrounds">
-      </a>
-      <br>
-      <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
-    </p>
+<p>
+  <a href="https://wallpapersafari.com/metallica-backgrounds/">
+    <img src="https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" width="auto" height="300" alt="Metallica Backgrounds">
+  </a>
+  <br>
+  <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
+</p>
 
-    <p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free.
-      -Reigin</p>
+<p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free.
+  -Reigin</p>
 
-    <p>if you didnt read the rules say, Slayer</p>
+<p>if you didnt read the rules say, Slayer</p>
 
-    <!-- this here is the ballon on the Wm going up -->
-    <marquee behavior="scroll" direction="up">
-      <img
-        src="https://cdn.discordapp.com/attachments/551804818549899273/610050805097299980/image0.gif"
-        width="auto" height="100" alt="animation of balloons going up the Wm">
-    </marquee>
+<!-- this here is the ballon on the Wm going up -->
+<marquee behavior="scroll" direction="up">
+  <img src="https://cdn.discordapp.com/attachments/551804818549899273/610050805097299980/image0.gif" width="auto"
+    height="100" alt="animation of balloons going up the Wm">
+</marquee>
 
-    <h2>Music</h2>
+<h2>Music</h2>
 
-    <div id="Music"></div>
+<div id="Music"></div>
 
 
 
-    <!-- the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
