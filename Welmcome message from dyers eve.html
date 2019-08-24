@@ -13,10 +13,11 @@
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
 
-<!-- this script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file) -->
+<!-- this script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file[which is this welcome message]) -->
 
 <script>
-  // async allows the welcome message to be loaded without waiting for all <script> to be done first.
+
+  // <style> is CSS (Cascading Style Sheets)
   $('head').append(`<style>
     /* Blockheads font */
     @font-face {
@@ -27,20 +28,20 @@
       font-family: "blockheads_font";
       /* Sets the background image(s) of an element. */
 
-      background-image: url('https://www.logolynx.com/images/logolynx/s_96/968148b14246807b1dd7c37aae17a1bd.jpeg') repeat-y;
+      background-image: url('https://cdn.discordapp.com/attachments/551804818549899273/613197789127639040/image0.jpg');
 
+      background-repeat: repeat-y;
       background-size: contain;
-      overflow: auto;
       
     }
 
     #messageContent {
       background: transparent;
       color: white;
+      font-weight: bold;
       border: solid;
       border-radius: 50px;
       border-width: 2px;
-      position: scroll;
     }
 
 
@@ -54,14 +55,10 @@
       color: orange;
     }
 
-    h3 {
-      margin: 0;
-    }
-
-    /* Define page sections */
-    section, .section {
+    /* The box at top of wm */
+    Center {
       padding: 4px;
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 0,0, 0.8);
       margin-bottom: 8px;
     }
 
@@ -70,8 +67,11 @@
       /* Enables shadow effects to be applied to the text of the element. */
 
       text-shadow: 5px 2px 4px grey;
-      transform: rotate(6deg);
-      Animation: colorChange 7s infinite;
+
+      /*  Rotates the element(welcome to dyers) add a - before the number to have it turn the other way */
+
+      transform: rotate(6deg) skew(30deg);
+      Animation: colorChange ease-in 7s infinite;
     }
 
     @keyframes colorChange {
@@ -102,26 +102,28 @@
       border: 0;
     }
     ol {
-      background-image: url('http://designpress-10674.kxcdn.com/wp-content/uploads/2012/01/optical-illusions/dropping-ball-illusion.gif');
-     background-repeat: repeat-y;
-     background-size: contain;
+      background-image: url('http://www.bruna.cat/imgdownload/full/133/1339313/and-justice-for-all-wallpaper.jpg');
+      background-size: cover;
     }
     </style>`);
 
 
+
+
+
+
+
+
   addEventListener('load', function () {
-    // Add .section to the center elements defined in the page already
-    Array.from(document.querySelectorAll('center')).forEach(function (el) {
-      el.classList.add('section');
-    });
-    // Remove lines between sections
-    Array.from(document.querySelectorAll('hr')).forEach(function (el) {
+
+  Array.from(document.querySelectorAll('hr')).forEach(function (el) {
       el.remove();
     });
   });
+  
 
 
-  $(document).ready(function () {
+  $(document).scroll(function () {
 
     $('ol').load("https://brandon097.github.io/hello-world/Dyers%20Eve%20Rules.html");
 
@@ -137,11 +139,29 @@
 
 
 
-<!-- BEGIN -->
+  <!-- before watching this, grab a napkin because it bout to get greasy -->
 
 
 
-<audio autoplay src="">
+
+
+
+
+
+
+
+                                <!-- BEGIN -->
+
+
+
+
+
+
+
+
+<!-- this is were random things playing on the wm happens( because of autoplay ) -->
+
+<audio autoplay src="../elevatorBell.wav">
 </audio>
 
 
@@ -152,15 +172,16 @@
 </a>
 
 
-<p>I love you guys, I guess this is bye forever - love cat</p>
+<p>I love you guys, I guess this is bye forever - <span class="blue">love cat</span></p>
 
 
-<p><span class="green">ARTHUR </span>ADDED 90 DAYS NIGGAS.</p>
+
+<p><span class="green">ARTHUR</span> ADDED 90 DAYS NIGGAS.</p>
+
+
+
 
 <h1>w̫e̫l̫c̫o̫m̫e̫ t̫o̫ d̫y̫e̫r̫s̫</h1>
-
-
-
 
 
 
@@ -179,6 +200,7 @@
 
 
 <!-- Start of CuterCounter Code -->
+
 <a href="https://www.cutercounter.com/" target="_blank">
   <img src="https://www.cutercounter.com/hits.php?id=gmqnnnd&nd=5&style=71" alt="website counter">
 </a>
@@ -187,8 +209,17 @@
 
 
 
-<img width="auto" height="300px"
-  src="https://media1.tenor.com/images/994a75b9419fb3183e65983bb08c6e43/tenor.gif?itemid&#x3D;12350063">
+<a href="https://blingee.com/blingee/view/130060529-Metallica" target="_blank">
+
+  <img src="https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif" height="auto" width="auto">
+</a>
+
+<br>
+
+<a href="https://blingee.com/pictures/metallica" target="_blank"  alt="Metallica"><p style="font-size:2em; color:blue;">metallica pictures</p></a>
+
+ 
+
 
 <br>
 <p>Skeet skeet</p>
@@ -196,7 +227,7 @@
 <!-- hr represents a paragraph-level thematic break -->
 
 <h2>RULES</h2>
-<!-- The h3 element represents a section heading, the smaller the number the bigger the text, from h1 to h6 -->
+<!-- The h2 element represents a section heading, The smaller the number the bigger the text, from h6 to h1 -->
 
 
 
@@ -218,7 +249,7 @@
 
 <p>
   <a href="https://wallpapersafari.com/metallica-backgrounds/">
-    <img src="https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" width="auto" height="auto" alt="Metallica Backgrounds">
+    <img src="https://cdn.wallpapersafari.com/98/77/Jr1fxW.jpg" width="auto" height="300px" alt="Metallica Backgrounds">
   </a>
   <br>
   <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
@@ -235,11 +266,10 @@
 
 
 
-<!-- this here is the ballon on the Wm going up -->
+<!-- sonic -->
 
 <marquee behavior="scroll" direction="right">
-  <img src="https://cdn.discordapp.com/attachments/551804818549899273/610050805097299980/image0.gif" width="auto"
-    height="100" alt="animation of balloons going up the Wm">
+  <img src="https://cdn.discordapp.com/attachments/551804818549899273/610050805097299980/image0.gif" width="auto" height="100px" alt="sonic Fortnite dance">
 </marquee>
 
 
@@ -252,7 +282,8 @@
 
 
 
-<!-- the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
+<!-- the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji. https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
+
 
 
 
