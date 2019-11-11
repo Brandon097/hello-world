@@ -10,13 +10,13 @@
 
 <!-- this first script loads jQuery, without it the second script won’t work, which would mean 1. The default background would be used, 2. The buttons would go back to normal, rules and music won’t be loaded from url, ETC -->
 
-<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src='https://code.jquery.com/jquery-3.1.1.js'></script>
 
 
 <!-- this script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file[which is this welcome message]) -->
 
-<script>
-
+<script async>
+  // Begin
   // <style> is CSS (Cascading Style Sheets)
   $('head').append(`<style>
     /* Blockheads font */
@@ -24,26 +24,24 @@
       font-family: "blockheads_font";
       src: url("../Fonts/04B_03__.TTF");
     }
+
     body {
       font-family: "blockheads_font";
+      /* Sets the background image(s) of the welcome message. */
 
-      /* Sets the background image(s) of an element. */
-      background-image: url('http://dl.glitter-graphics.net/pub/581/581171wzccy3e1t8.jpg');
-
+      background-image: url('https://fsa.zobj.net/crop.php?r=s7F8Ull4arbOYSCONtqlTs5FJ9jEz7QsUHRXGxR1nD413GvODKfQX1Ky3_H6mSLja6fmU6FS2E8Y61W-DWQOEBXQvxnXj9wzDIrqW8tXfNTgCW5i6WBH2HlefqVTX38Cz3bWEbkkze2cwxtYBmo1Q9oRDw_UijyF5VKDbDbWA4m96SQMerOhseNNSTA');
       background-repeat: repeat-y;
       background-size: contain;
-
     }
 
-    #messageContent {
-      background: transparent;
-      color: white;
-      font-weight: bold;
-      border: solid;
-      border-radius: 50px;
-      border-width: 2px;
+    /* The box at top of wm */
+    Center {
+      padding: 40px;
+      background-color: black;
+      color: Red;
+      margin-bottom: 8px;
+      border-radius: 20px;
     }
-
 
     /* Nicer show more info button */
     button {
@@ -55,27 +53,26 @@
       color: orange;
     }
 
-    /* The box at top of wm */
-    Center {
-      padding: 40px;
-      background-color: black;
-      color: Red;
-      margin-bottom: 8px;
-      border-radius: 40px;
+    /* the white round box */
+    #messageContent {
+      background: transparent;
+      color: white;
+      font-weight: bold;
+      border: solid;
+      border-radius: 50px;
+      border-width: 2px;
     }
-
+   
     h1 {
       font-size: 30px;
-
       /* Enables shadow effects to be applied to the text of the element. */
+
       text-shadow: 5px 2px 4px grey;
-
       /*  Rotates the element(welcome to dyers) add a - before the number to have it turn the other way */
+
       transform: rotate(6deg) skew(30deg);
-
-      Animation: colorChange ease-out 7s infinite;
+      Animation: colorChange ease-out 5s infinite;
     }
-
     @keyframes colorChange {
       0% {
         color: blue;
@@ -88,36 +85,50 @@
       }
     }
     h2 {
+      text-align: center;
       color: white;
       background-color: gray;
+      Background-image: url('https://fsa.zobj.net/crop.php?r=AfdZ0CrzNcDJ__q5kdsTFdmV5jmSmMO1ycmA0KFCyUluvTzr4F8NMOkHGc9AjP_tU1yimBUtELLs5qc3sjHuEq4Kx64EH0b1kv9B7TCxTEKCXzZf5figu4P3VnQO36tqlzjBPeJxG3wS7Abn');
+      background-size: contain;
     }
+
     .blue {
       color: blue;
     }
+
     .green {
       color: green;
     }
+
     .yellow {
       color: yellowgreen;
     }
+
     img {
       border: 0;
     }
-    ol {
-      background-image: url('http://www.bruna.cat/imgdownload/full/133/1339313/and-justice-for-all-wallpaper.jpg');
-      background-size: cover;
-      color: yellow;
 
+    ol {
+      /* Background image of rules. */
+
+      background-image: url('https://fsa.zobj.net/crop.php?r=Y8NWwXOatk0_ncOEmESr-NvCnTGKVF_0U3_c6-FgYN7h3oifZZ69jGq5yCwMBgBPCSx3VabHhvN-AQ6TpxP7Eo4OL9Plj2LhkyNtqlMUzXkOfL0cmFJ1N_jpKPci0g6D1H-kvafop2XnBu-5');
+      background-size: cover;
+      /* text color for rules */
+
+      color: yellow;
       /* BRIGHTNESS, yep that’s a thing to */
-      Filter: brightness(40%);
+
+      Filter: brightness(80%);
     }
     </style>`);
+  // End
+
+
+  // the below script in order removes all <hr>’s, GET/load’s the rules and the music list on scroll event
 
 
 
-
-
-
+  // Begin
   document.addEventListener('scroll', function () {
     Array.from(document.querySelectorAll('hr')).forEach(function (el) {
       el.remove();
@@ -126,10 +137,8 @@
     $('ol').load('https://brandon097.github.io/hello-world/Dyers%20Eve%20Rules.html');
 
     $('#Music').load('https://brandon097.github.io/hello-world/Dyers%20Eve%20Music.html');
-
   });
-
-
+  // End
 </script>
 
 
@@ -150,7 +159,13 @@
 
 
 
+
 <!-- BEGIN -->
+
+
+
+
+
 
 
 
@@ -161,32 +176,40 @@
 
 <!-- this is were random things playing on the wm happens( because of autoplay ) -->
 
-<audio autoplay src="../elevatorBell.wav">
+<audio autoplay src="">
 </audio>
 
 
 
 
 
-<img src="https://static.wixstatic.com/media/5fa934_d4d1d2f36c01435dad286e07fab9fdd3.gif"
-  style="position:fixed;right:0px;height:150px;width:50px;">
-
-
-
-
+<!-- the all back grounds.com button -->
 
 <a href="http://allbackgrounds.com">
   <img src="http://static.allbackgrounds.com/static/button.jpg"
-    style="position:absolute;left:110px;top:160px;padding:1px;font-family:verdana;font-size:8pt;"
+    style="position:absolute;top:160px;right:1px;padding:1px;font-family:verdana;font-size:8pt;"
     alt="twitter backgrounds">
 </a>
+
+
+
+
+<!-- barber pole thing on the wm -->
+<img src="https://static.wixstatic.com/media/5fa934_d4d1d2f36c01435dad286e07fab9fdd3.gif"
+  style="position:fixed;right:0px;top:1;height:150px;width:50px;"
+  alt="barber pole thing">
+
+
+
+
+
 
 
 <p>I love you guys, I guess this is bye forever - <span class="blue">love cat</span></p>
 
 
 
-<p><span class="green">ARTHUR</span> ADDED 90 DAYS NIGGAS.</p>
+
 
 
 
@@ -229,8 +252,13 @@
 
 
 
-<img src="https://media1.tenor.com/images/994a75b9419fb3183e65983bb08c6e43/tenor.gif?itemid=12350063" height="300px"
-  width="auto">
+<img src="https://www.rarerecords.com.au/wp-content/uploads/2016/05/METALLICASPONGEBOB-SQUAREPANTS-White-Metallica-Vs.-Spongebob-Squarepants-Design-Kids-T-Shirt-1.jpg" Height="auto" width="auto">
+
+<br>
+
+<a href="https://blingee.com/pictures/metallica" target="_blank" style="font-size:2em;">metallica pictures</a>
+
+  
 
 
 <br>
@@ -255,7 +283,20 @@
 
 
 
+
+
+
+
+<!-- ol stands for order list, if you want to add other rule go between <ol>RIGHT HERE</ol> then do <li>your_rule_here</li> -->
+
 <ol id="Rules"></ol>
+
+
+
+
+
+
+
 
 
 
@@ -278,8 +319,7 @@
 
 
 
-<p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free.
-  -Reigin</p>
+<p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free” -Reigin</p>
 
 <p>if you didnt read the rules say, Slayer</p>
 
@@ -302,9 +342,7 @@
 
 
 
-<!-- the wm is stored online on my GitHub repository, if someone deleted Wm here, you can simply go to the link bellow, copy the wm, and paste it back here 😎 why not that emoji. https://github.com/Brandon097/hello-world/blob/master/Welmcome%20message%20from%20dyers%20eve.html From llama -->
-
-
+<!-- the wm is stored online on my _____ __________, but I can't show the url here no longer since someone posted a flex patch of a code (that I known for a few months) that allows to edit button to be shown when joining a server, you can't delete a welcome message though since that only changes on your screen. in conclusion you have to ask me on _______ whether you need this url now. -->
 
 
 
@@ -330,4 +368,3 @@
 
 </body>
 </html>
-
