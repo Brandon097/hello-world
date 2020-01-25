@@ -13,11 +13,15 @@
 <script src='https://code.jquery.com/jquery-3.1.1.js'></script>
 
 
+<!-- this first script loads jQuery, without it the second script won’t work, which would mean 1. The default background would be used, 2. The buttons would go back to normal, rules and music won’t be loaded from url, ETC -->
+
+<script src='https://code.jquery.com/jquery-3.1.1.js'></script>
+
+
 <!-- This script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file[which is this welcome message]) -->
 
 <script async>
-  // Begin
-  // <style> is CSS (Cascading Style Sheets)
+  // Begin. <style> is CSS (Cascading Style Sheets)
   $('head').append(`<style>
     /* Blockheads font */
     @font-face {
@@ -25,25 +29,21 @@
     /* Use font file front from IOS blockheads’s directory */
       src: url("../Fonts/04B_03__.TTF");
     }
-
     body {
       font-family: "blockheads_font";
       /* Sets the background image(s) of the welcome message. */
-
-      background-image: url('https://fsa.zobj.net/crop.php?r=s7F8Ull4arbOYSCONtqlTs5FJ9jEz7QsUHRXGxR1nD413GvODKfQX1Ky3_H6mSLja6fmU6FS2E8Y61W-DWQOEBXQvxnXj9wzDIrqW8tXfNTgCW5i6WBH2HlefqVTX38Cz3bWEbkkze2cwxtYBmo1Q9oRDw_UijyF5VKDbDbWA4m96SQMerOhseNNSTA');
+      background-image: url('https://www.venis.com/wp-content/uploads/2018/03/newport-443x443-dark-grey.jpg');
       background-repeat: repeat-y;
       background-size: contain;
     }
-
     /* The box at top of wm */
     Center {
       padding: 40px;
-      background-color: black;
+      background-color: gray;
       color: Red;
       margin-bottom: 8px;
       border-radius: 20px;
     }
-
     /* Nicer show more info button */
     button {
       background: transparent;
@@ -53,7 +53,6 @@
       width: auto;
       color: orange;
     }
-
     /* The white round box */
     #messageContent {
       background: transparent;
@@ -67,10 +66,8 @@
     h1 {
       font-size: 30px;
       /* Enables shadow effects to be applied to the text of the element. */
-
       text-shadow: 5px 2px 4px grey;
       /*  Rotates the element(welcome to dyers) add a - before the number to have it turn the other way */
-
       transform: rotate(6deg) skew(30deg);
       Animation: colorChange ease-out 5s infinite;
     }
@@ -92,41 +89,32 @@
       Background-image: url('https://fsa.zobj.net/crop.php?r=AfdZ0CrzNcDJ__q5kdsTFdmV5jmSmMO1ycmA0KFCyUluvTzr4F8NMOkHGc9AjP_tU1yimBUtELLs5qc3sjHuEq4Kx64EH0b1kv9B7TCxTEKCXzZf5figu4P3VnQO36tqlzjBPeJxG3wS7Abn');
       background-size: contain;
     }
-
     .blue {
       color: blue;
     }
-
     .green {
       color: green;
     }
-
     .yellow {
       color: yellowgreen;
     }
-
     img {
       border: 0;
     }
-
-    ol {
+    #Rules {
       /* Background image of rules. */
-
       background-image: url('https://fsa.zobj.net/crop.php?r=Y8NWwXOatk0_ncOEmESr-NvCnTGKVF_0U3_c6-FgYN7h3oifZZ69jGq5yCwMBgBPCSx3VabHhvN-AQ6TpxP7Eo4OL9Plj2LhkyNtqlMUzXkOfL0cmFJ1N_jpKPci0g6D1H-kvafop2XnBu-5');
       background-size: cover;
       /* Text color for rules */
-
       color: yellow;
       /* BRIGHTNESS, yep that’s a thing to */
-
       Filter: brightness(80%);
     }
     </style>`);
   // End
 
 
-  // The below script in order removes all <hr>’s, GET/load’s the rules and the music list on scroll event
-
+  // The below script in order removes all <hr>’s, GET/load’s the music list on scroll event, the music metadata is not loaded
 
 
   // Begin
@@ -135,7 +123,6 @@
       el.remove();
     });
 
-    $('ol').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Rules.html');
 
     $('#Music').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Music.html');
   });
@@ -191,17 +178,6 @@
     style="position:absolute;top:160px;right:1px;padding:1px;font-family:verdana;font-size:8pt;"
     alt="twitter backgrounds">
 </a>
-
-
-
-
-<!-- Barber pole thing on the wm -->
-<img src="https://static.wixstatic.com/media/5fa934_d4d1d2f36c01435dad286e07fab9fdd3.gif"
-  style="position:fixed;right:0px;top:1;height:150px;width:50px;"
-  alt="barber pole thing">
-
-
-
 
 
 
@@ -290,7 +266,46 @@
 
 <!-- ol stands for order list, if you want to add other rule go between <ol>RIGHT HERE</ol> then do <li>your_rule_here</li> -->
 
-<ol id="Rules"></ol>
+<ol id="Rules"> <li>
+  <p>Listen to <span class="blue">admins</span> and <span class="green">mods</span></p>
+</li>
+<li>
+  <p>Don't be an arse</p>
+</li>
+<li>
+  <p>No littering</p>
+</li>
+<li>
+  <p>No dirt homes... like really..</p>
+</li>
+<li>
+  <p>Don't build on water, or you will be banned </p>
+</li>
+<li>
+  <p>No dating, like dude they make dating sites you know...</p>
+</li>
+<li>
+  <p>If you build some thing and dont come back in a long time, it will be destroyed</p>
+</li>
+<li>
+  <p>Just be a nice person</p>
+</li>
+<li>
+  <p>Dont be a smart arse</p>
+</li>
+<li>
+  <p>Dont pick fights with people</p>
+</li>
+<li>
+  <p>Dont advertise</p>
+</li>
+<li>
+  <p>Dont ask for <span class="blue">admin</span> or <span class="green">mod</span>, youll get banned</p>
+</li>
+<li>
+  <p>No friggen drama.</p>
+</li>
+</ol>
 
 
 
@@ -344,6 +359,22 @@
 
 
 <!-- The wm is stored online on my _____ __________, but I can't show the url here no longer since someone posted a flex patch of a code (that I known for a few months) that allows to edit button to be shown when joining a server, you can't delete a welcome message though since that only changes on your screen. in conclusion you have to ask me on _______ whether you need this url now. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
