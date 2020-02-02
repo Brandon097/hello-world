@@ -8,19 +8,12 @@
 <p>
 <center>[TITLE]</center><br/>
 
-<!-- this first script loads jQuery, without it the second script won’t work, which would mean 1. The default background would be used, 2. The buttons would go back to normal, rules and music won’t be loaded from url, ETC -->
-
-<script src='https://code.jquery.com/jquery-3.1.1.js'></script>
-
-
-<!-- this first script loads jQuery, without it the second script won’t work, which would mean 1. The default background would be used, 2. The buttons would go back to normal, rules and music won’t be loaded from url, ETC -->
-
 <script src='https://code.jquery.com/jquery-3.1.1.js'></script>
 
 
 <!-- This script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file[which is this welcome message]) -->
 
-<script async>
+<script>
   // Begin. <style> is CSS (Cascading Style Sheets)
   $('head').append(`<style>
     /* Blockheads font */
@@ -31,7 +24,7 @@
     }
     body {
       font-family: "blockheads_font";
-      /* Sets the background image(s) of the welcome message. */
+      /* Sets the background image of the welcome message. */
       background-image: url('https://www.venis.com/wp-content/uploads/2018/03/newport-443x443-dark-grey.jpg');
       background-repeat: repeat-y;
       background-size: contain;
@@ -62,7 +55,7 @@
       border-radius: 50px;
       border-width: 2px;
     }
-   
+
     h1 {
       font-size: 30px;
       /* Enables shadow effects to be applied to the text of the element. */
@@ -113,16 +106,13 @@
     </style>`);
   // End
 
-
   // The below script in order removes all <hr>’s, GET/load’s the music list on scroll event, the music metadata is not loaded
-
 
   // Begin
   document.addEventListener('scroll', function () {
     Array.from(document.querySelectorAll('hr')).forEach(function (el) {
       el.remove();
     });
-
 
     $('#Music').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Music.html');
   });
@@ -168,9 +158,6 @@
 </audio>
 
 
-
-
-
 <!-- The all back grounds.com button -->
 
 <a href="http://allbackgrounds.com">
@@ -178,8 +165,6 @@
     style="position:absolute;top:160px;right:1px;padding:1px;font-family:verdana;font-size:8pt;"
     alt="twitter backgrounds">
 </a>
-
-
 
 
 <p>I love you guys, I guess this is bye forever - <span class="blue">love cat</span></p>
@@ -216,7 +201,6 @@
 
 
 <!-- Start of CuterCounter Code -->
-
 <a href="https://www.cutercounter.com/" target="_blank">
   <img src="https://www.cutercounter.com/hits.php?id=gmqnnnd&nd=5&style=71" alt="website counter">
 </a>
@@ -229,13 +213,15 @@
 
 
 
-<img src="https://www.rarerecords.com.au/wp-content/uploads/2016/05/METALLICASPONGEBOB-SQUAREPANTS-White-Metallica-Vs.-Spongebob-Squarepants-Design-Kids-T-Shirt-1.jpg" Height="auto" width="auto">
+<img
+  src="https://www.rarerecords.com.au/wp-content/uploads/2016/05/METALLICASPONGEBOB-SQUAREPANTS-White-Metallica-Vs.-Spongebob-Squarepants-Design-Kids-T-Shirt-1.jpg"
+  height="auto" width="auto" alt="Shirt of metallica with Spongebob-Squarepants">
 
 <br>
 
 <a href="https://blingee.com/pictures/metallica" target="_blank" style="font-size:2em;">metallica pictures</a>
 
-  
+
 
 
 <br>
@@ -251,60 +237,48 @@
 <!-- hr represents a paragraph-level thematic break -->
 
 <h2>RULES</h2>
-<!-- The h2 element represents a section heading, The smaller the number the bigger the text, from h6 to h1 -->
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ol stands for order list, if you want to add other rule go between <ol>RIGHT HERE</ol> then do <li>your_rule_here</li> -->
 
-<ol id="Rules"> <li>
-  <p>Listen to <span class="blue">admins</span> and <span class="green">mods</span></p>
-</li>
-<li>
-  <p>Don't be an arse</p>
-</li>
-<li>
-  <p>No littering</p>
-</li>
-<li>
-  <p>No dirt homes... like really..</p>
-</li>
-<li>
-  <p>Don't build on water, or you will be banned </p>
-</li>
-<li>
-  <p>No dating, like dude they make dating sites you know...</p>
-</li>
-<li>
-  <p>If you build some thing and dont come back in a long time, it will be destroyed</p>
-</li>
-<li>
-  <p>Just be a nice person</p>
-</li>
-<li>
-  <p>Dont be a smart arse</p>
-</li>
-<li>
-  <p>Dont pick fights with people</p>
-</li>
-<li>
-  <p>Dont advertise</p>
-</li>
-<li>
-  <p>Dont ask for <span class="blue">admin</span> or <span class="green">mod</span>, youll get banned</p>
-</li>
-<li>
-  <p>No friggen drama.</p>
-</li>
+<ol id="Rules">
+  <li>
+    <p>Listen to <span class="blue">admins</span> and <span class="green">mods</span></p>
+  </li>
+  <li>
+    <p>Don't be an arse</p>
+  </li>
+  <li>
+    <p>No littering</p>
+  </li>
+  <li>
+    <p>No dirt homes... like really..</p>
+  </li>
+  <li>
+    <p>Don't build on water, or you will be banned </p>
+  </li>
+  <li>
+    <p>No dating, like dude they make dating sites you know...</p>
+  </li>
+  <li>
+    <p>If you build some thing and dont come back in a long time, it will be destroyed</p>
+  </li>
+  <li>
+    <p>Just be a nice person</p>
+  </li>
+  <li>
+    <p>Dont be a smart arse</p>
+  </li>
+  <li>
+    <p>Dont pick fights with people</p>
+  </li>
+  <li>
+    <p>Dont advertise</p>
+  </li>
+  <li>
+    <p>Dont ask for <span class="blue">admin</span> or <span class="green">mod</span>, youll get banned</p>
+  </li>
+  <li>
+    <p>No friggen drama.</p>
+  </li>
 </ol>
 
 
@@ -335,7 +309,8 @@
 
 
 
-<p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free” -Reigin</p>
+<p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free”
+  -Reigin</p>
 
 <p>if you didnt read the rules say, Slayer</p>
 
