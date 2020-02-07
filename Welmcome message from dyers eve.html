@@ -8,12 +8,16 @@
 <p>
 <center>[TITLE]</center><br/>
 
-<script src='https://code.jquery.com/jquery-3.1.1.js'></script>
+<!-- This script(jQuery) will edit the <head> tag and put CSS(<styles>) in it. if this is missing and the wm doesn’t look ok. Look up JQuery, copy and paste the download link below this line comment-->
 
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
-<!-- This script(jQuery) will edit the <head> tag and put CSS(<styles>) in it (Note the head tag is in the server.html file[which is this welcome message]) -->
 
 <script>
+  $(document).ready(function() {
   // Begin. <style> is CSS (Cascading Style Sheets)
   $('head').append(`<style>
     /* Blockheads font */
@@ -109,12 +113,13 @@
   // The below script in order removes all <hr>’s, GET/load’s the music list on scroll event, the music metadata is not loaded
 
   // Begin
-  document.addEventListener('scroll', function () {
+ document.addEventListener('scroll', function () {
     Array.from(document.querySelectorAll('hr')).forEach(function (el) {
       el.remove();
     });
 
     $('#Music').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Music.html');
+  });
   });
   // End
 </script>
@@ -123,40 +128,12 @@
 
 
 
-
-
-
 <!-- Before watching this, grab a napkin because it bout to grit greasy -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- BEGIN -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- This is were random things playing on the wm happens( because of autoplay ) -->
 
-<audio autoplay src="">
+<audio autoplay src="../elevatorBell.wav">
 </audio>
-
 
 <!-- The all back grounds.com button -->
 
@@ -166,27 +143,10 @@
     alt="twitter backgrounds">
 </a>
 
-
 <p>I love you guys, I guess this is bye forever - <span class="blue">love cat</span></p>
 
 
-
-
-
-
-
-
-
-
-
 <h1>w̫e̫l̫c̫o̫m̫e̫ t̫o̫ d̫y̫e̫r̫s̫</h1>
-
-
-
-
-
-
-
 
 <p>UniqueVisitors</p>
 
@@ -196,22 +156,13 @@
 </a>
 <!-- End of CuterCounter Code -->
 
-
 <p>page visits</p>
-
 
 <!-- Start of CuterCounter Code -->
 <a href="https://www.cutercounter.com/" target="_blank">
   <img src="https://www.cutercounter.com/hits.php?id=gmqnnnd&nd=5&style=71" alt="website counter">
 </a>
 <!-- End of CuterCounter Code -->
-
-
-
-
-
-
-
 
 <img
   src="https://www.rarerecords.com.au/wp-content/uploads/2016/05/METALLICASPONGEBOB-SQUAREPANTS-White-Metallica-Vs.-Spongebob-Squarepants-Design-Kids-T-Shirt-1.jpg"
@@ -221,16 +172,7 @@
 
 <a href="https://blingee.com/pictures/metallica" target="_blank" style="font-size:2em;">metallica pictures</a>
 
-
-
-
 <br>
-
-
-
-
-
-
 <br>
 <p>Skeet skeet</p>
 <hr>
@@ -281,19 +223,6 @@
   </li>
 </ol>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <hr>
 <p>If you read rules say WTF, if you just read the WTF and not the rules then hope for the best</p>
 
@@ -305,16 +234,10 @@
   <a href="https://wallpapersafari.com/">wallpapersafari.com</a>
 </p>
 
-
-
-
-
 <p>You are trapped in spawn by the way. If owner trusts you your free. If your an ass then I guess your not free”
   -Reigin</p>
 
 <p>if you didnt read the rules say, Slayer</p>
-
-
 
 <!-- Sonic -->
 
@@ -323,35 +246,11 @@
     height="100px" alt="Sonic Fortnite dance">
 </marquee>
 
-
-
 <h2>Music</h2>
-
-
 
 <div id="Music"></div>
 
-
-
 <!-- The wm is stored online on my _____ __________, but I can't show the url here no longer since someone posted a flex patch of a code (that I known for a few months) that allows to edit button to be shown when joining a server, you can't delete a welcome message though since that only changes on your screen. in conclusion you have to ask me on _______ whether you need this url now. -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
