@@ -124,15 +124,15 @@
 
     // Required. Called when a user selects an item in the Chooser.
     success: function(files) {
-        a$get(files[0].link);
+      a$get(files[0].link);
     },
 
     // Optional. Called when the user closes the dialog without selecting a file
     // and does not include any parameters.
     cancel: function() {
-        alert("cancled");
+      alert('cancled');
     },
-    linkType: "direct",
+    linkType: 'direct',
 
     // Optional. A value of false (default) limits selection to a single file, while
     // true enables multiple file selection.
@@ -141,63 +141,63 @@
   };
 
   var button = Dropbox.createChooseButton(options);
-  document.getElementById("container").appendChild(div);
+  document.getElementById('container').appendChild(div);
 
   file = {
     // Unique ID for the file, compatible with Dropbox API v2.
-    id: "id:...",
+    id: 'id:...',
 
     // Name of the file.
-    name: "filename.txt",
+    name: 'filename.txt',
 
     // URL to access the file, which varies depending on the linkType specified when the
     // Chooser was triggered.
-    link: "https://...",
+    link: 'https://...',
 
     // Size of the file in bytes.
     bytes: 464,
 
     // URL to a 64x64px icon for the file based on the file's extension.
-    icon: "https://...",
+    icon: 'https://...',
 
     // A thumbnail URL generated when the user selects images and videos.
     // If the user didn't select an image or video, no thumbnail will be included.
-    thumbnailLink: "https://...?bounding_box=75&mode=fit",
+    thumbnailLink: 'https://...?bounding_box=75&mode=fit',
 
     // Boolean, whether or not the file is actually a directory
     isDir: false,
   };
 
-   var audioElement = document.createElement('audio');
-    audioElement.setAttribute('src', 'files[0].link');
+  var audioElement = document.createElement('audio');
+  audioElement.setAttribute('src', 'files[0].link');
     
-    audioElement.addEventListener('ended', function() {
-        this.play();
-    }, false);
+  audioElement.addEventListener('ended', function() {
+    this.play();
+  }, false);
     
-    audioElement.addEventListener("canplay",function(){
-        $("#length").text("Duration:" + audioElement.duration + " seconds");
-        $("#source").text("Source:" + audioElement.src);
-        $("#status").text("Status: Ready to play").css("color","green");
-    });
+  audioElement.addEventListener('canplay',function(){
+    $('#length').text('Duration:' + audioElement.duration + ' seconds');
+    $('#source').text('Source:' + audioElement.src);
+    $('#status').text('Status: Ready to play').css('color','green');
+  });
     
-    audioElement.addEventListener("timeupdate",function(){
-        $("#currentTime").text("Current second:" + audioElement.currentTime);
-    });
+  audioElement.addEventListener('timeupdate',function(){
+    $('#currentTime').text('Current second:' + audioElement.currentTime);
+  });
     
-    $('#play').click(function() {
-        audioElement.play();
-        $("#status").text("Status: Playing");
-    });
+  $('#play').click(function() {
+    audioElement.play();
+    $('#status').text('Status: Playing');
+  });
     
-    $('#pause').click(function() {
-        audioElement.pause();
-        $("#status").text("Status: Paused");
-    });
+  $('#pause').click(function() {
+    audioElement.pause();
+    $('#status').text('Status: Paused');
+  });
     
-    $('#restart').click(function() {
-        audioElement.currentTime = 0;
-    });
+  $('#restart').click(function() {
+    audioElement.currentTime = 0;
+  });
 </script>
 
 
