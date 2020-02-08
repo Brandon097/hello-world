@@ -10,16 +10,14 @@
 
 <!-- This script(jQuery) will edit the <head> tag and put CSS(<styles>) in it. if this is missing and the wm doesn’t look ok. Look up JQuery, copy and paste the download link below this line comment-->
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 
 <script>
-  $(document).ready(function() {
-  // Begin. <style> is CSS (Cascading Style Sheets)
-  $('head').append(`<style>
+  $(document).ready(function () {
+    // Begin. <style> is CSS (Cascading Style Sheets)
+    $('head').append(`<style>
     /* Blockheads font */
     @font-face {
       font-family: "blockheads_font";
@@ -34,7 +32,7 @@
       background-size: contain;
     }
     /* The box at top of wm */
-    Center {
+    center {
       padding: 40px;
       background-color: gray;
       color: Red;
@@ -66,7 +64,7 @@
       text-shadow: 5px 2px 4px grey;
       /*  Rotates the element(welcome to dyers) add a - before the number to have it turn the other way */
       transform: rotate(6deg) skew(30deg);
-      Animation: colorChange ease-out 5s infinite;
+      animation: colorChange ease-out 5s infinite;
     }
     @keyframes colorChange {
       0% {
@@ -83,7 +81,7 @@
       text-align: center;
       color: white;
       background-color: gray;
-      Background-image: url('https://fsa.zobj.net/crop.php?r=AfdZ0CrzNcDJ__q5kdsTFdmV5jmSmMO1ycmA0KFCyUluvTzr4F8NMOkHGc9AjP_tU1yimBUtELLs5qc3sjHuEq4Kx64EH0b1kv9B7TCxTEKCXzZf5figu4P3VnQO36tqlzjBPeJxG3wS7Abn');
+      background-image: url('https://fsa.zobj.net/crop.php?r=AfdZ0CrzNcDJ__q5kdsTFdmV5jmSmMO1ycmA0KFCyUluvTzr4F8NMOkHGc9AjP_tU1yimBUtELLs5qc3sjHuEq4Kx64EH0b1kv9B7TCxTEKCXzZf5figu4P3VnQO36tqlzjBPeJxG3wS7Abn');
       background-size: contain;
     }
     .blue {
@@ -105,25 +103,24 @@
       /* Text color for rules */
       color: yellow;
       /* BRIGHTNESS, yep that’s a thing to */
-      Filter: brightness(80%);
+      filter: brightness(80%);
     }
     </style>`);
-  // End
+    // End
 
-  // The below script in order removes all <hr>’s, GET/load’s the music list on scroll event, the music metadata is not loaded
+    // The below script in order removes all <hr>’s, GET/load’s the music list on scroll event, the music metadata is not loaded
 
-  // Begin
- document.addEventListener('scroll', function () {
-    Array.from(document.querySelectorAll('hr')).forEach(function (el) {
-      el.remove();
+    // Begin
+    document.addEventListener('scroll', function () {
+      Array.from(document.querySelectorAll('hr')).forEach(function (el) {
+        el.remove();
+      });
+
+      $('#Music').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Music.html');
     });
-
-    $('#Music').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Music.html');
-  });
   });
   // End
 </script>
-
 
 
 
@@ -177,7 +174,6 @@
 <p>Skeet skeet</p>
 <hr>
 <!-- hr represents a paragraph-level thematic break -->
-
 <h2>RULES</h2>
 <!-- ol stands for order list, if you want to add other rule go between <ol>RIGHT HERE</ol> then do <li>your_rule_here</li> -->
 
@@ -251,6 +247,7 @@
 <div id="Music"></div>
 
 <!-- The wm is stored online on my _____ __________, but I can't show the url here no longer since someone posted a flex patch of a code (that I known for a few months) that allows to edit button to be shown when joining a server, you can't delete a welcome message though since that only changes on your screen. in conclusion you have to ask me on _______ whether you need this url now. -->
+
 
 
 
