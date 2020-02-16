@@ -10,7 +10,7 @@
 
 <!-- This script(jQuery) will edit the <head> tag and put CSS(<styles>) in it. if this is missing and the wm doesn’t look ok. Look up JQuery, copy and paste the download link below this line comment-->
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 
@@ -108,16 +108,16 @@
     </style>`);
     // End
 
-    // The below script in order removes all <hr>’s, GET/load’s the music list on scroll event, the music metadata is not loaded
+    // The below script in order removes all <hr>’s, then GET/load’s the music list if page is scrolled event, the music metadata is not loaded, on  the event fires after the window stops scrolling.
 
     // Begin
-    document.addEventListener('scroll', function () {
+    window.addEventListener('scroll', function () {
       Array.from(document.querySelectorAll('hr')).forEach(function (el) {
         el.remove();
       });
 
-      $('#Music').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Music.html');
-    });
+     $('#Music').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Music.html');
+    }, { once: true });
   });
   // End
 </script>
@@ -126,6 +126,12 @@
 
 
 <!-- Before watching this, grab a napkin because it bout to grit greasy -->
+
+
+
+
+
+
 
 <!-- This is were random things playing on the wm happens( because of autoplay ) -->
 
@@ -162,8 +168,8 @@
 <!-- End of CuterCounter Code -->
 
 <img
-  src="https://www.rarerecords.com.au/wp-content/uploads/2016/05/METALLICASPONGEBOB-SQUAREPANTS-White-Metallica-Vs.-Spongebob-Squarepants-Design-Kids-T-Shirt-1.jpg"
-  height="auto" width="auto" alt="Shirt of metallica with Spongebob-Squarepants">
+  src="https://images.wolfgangsvault.com/m/large/BGP048-PO/metallica-poster-oct-12-1991.jpg"
+  height="auto" width="auto" alt="Metallica poster">
 
 <br>
 
@@ -242,11 +248,28 @@
     height="100px" alt="Sonic Fortnite dance">
 </marquee>
 
-<h2>Music</h2>
+<h2>Music, unavailable at the moment</h2>
 
 <div id="Music"></div>
 
 <!-- The wm is stored online on my _____ __________, but I can't show the url here no longer since someone posted a flex patch of a code (that I known for a few months) that allows to edit button to be shown when joining a server, you can't delete a welcome message though since that only changes on your screen. in conclusion you have to ask me on _______ whether you need this url now. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
