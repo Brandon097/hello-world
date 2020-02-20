@@ -10,12 +10,11 @@
 
 <!-- This script(jQuery) will edit the <head> tag and put CSS(<styles>) in it. if this is missing and the wm doesn’t look ok. Look up JQuery, copy and paste the download link below this line comment-->
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 
 <script>
-  $(document).ready(function () {
+  $.ready(function () {
     // Begin. <style> is CSS (Cascading Style Sheets)
     $('head').append(`<style>
     /* Blockheads font */
@@ -112,8 +111,7 @@
 
     // Begin
     window.addEventListener('scroll', function () {
-      document.querySelectorAll('hr').remove();
-
+      document.querySelectorAll('hr').forEach(el => el.remove());
       $('#Music').load('https://%42%52%41%6E%64%6F%6E%30%39%37.github.io/hello-world/Dyers%20Eve%20Music.html');
     }, { once: true });
   });
@@ -163,7 +161,7 @@
 </a>
 <!-- End of CuterCounter Code -->
 
-<img  src="https://images.wolfgangsvault.com/m/large/BGP048-PO/metallica-poster-oct-12-1991.jpg" width="300px" alt="Metallica poster">
+<img  src="https://s3.amazonaws.com/image.blingee.com/images19/content/output/000/000/000/7c0/800287952_1761241.gif" width="300px" alt="Metallica poster">
 
 <br>
 
@@ -238,8 +236,7 @@
 <!-- Sonic -->
 
 <marquee behavior="scroll" direction="right">
-  <img src="https://cdn.discordapp.com/attachments/551804818549899273/610050805097299980/image0.gif" width="100px"
-    height="100px" alt="Sonic Fortnite dance">
+  <img src="https://cdn.discordapp.com/attachments/551804818549899273/610050805097299980/image0.gif" width="100px" height="100px" alt="Sonic Fortnite dance">
 </marquee>
 
 <h2>Music, unavailable at the moment</h2>
